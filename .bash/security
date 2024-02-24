@@ -1,5 +1,7 @@
 ###############################security#######################################
 
+alias hackthebox='tmuxp load $HOME/.config/tmuxp/ctf.yaml'
+
 #Juiceshop
 alias juiceshop='docker run --name juiceshop -d --rm -p 3000:3000 bkimminich/juice-shop'
 

@@ -9,3 +9,12 @@ man() {
 		LESS_TERMCAP_us=$'\E[04;38;5;146m' \
 		man "$@"
 }
+
+timestamp() {
+	date +%Y%m%d-%T
+}
+function up() {
+	for i in $(seq 1 $1); do
+		cd ../
+	done
+}

@@ -8,7 +8,7 @@ kali() {
 	if [ ! -d $(pwd)/.kali-logs ]; then
 		mkdir -p $1/{recon,www,exploit,pivot,report} && cd $1 && mkdir .kali-logs &&
 			docker run --name $1 -it \
-				--net=host --entrypoint=/bin/zsh \
+				--net=host --entrypoint=/bin/bash \
 				--cap-add=NET_ADMIN \
 				-e DISPLAY=$DISPLAY -e DOMAIN=$DOMAIN \
 				-e TARGET=$TARGET -e IP=$IP -e TZ=$TIME_ZONE -e NAME=$1 \
@@ -18,7 +18,7 @@ kali() {
 				-w /$1 fonalex45/kali-sec:latest
 	else
 		docker run --name $1 -it \
-			--net=host --entrypoint=/bin/zsh \
+			--net=host --entrypoint=/bin/bash \
 			--cap-add=NET_ADMIN \
 			-e DOMAIN=$DOMAIN -e DISPLAY=$DISPLAY \
 			-e TARGET=$TARGET -e IP=$IP \
@@ -33,7 +33,7 @@ kali-dev() {
 	if [ ! -d $(pwd)/.kali-logs ]; then
 		mkdir -p $1/{recon,www,exploit,pivot,report} && cd $1 && mkdir .kali-logs &&
 			docker run --name $1 -it \
-				--net=host --entrypoint=/bin/zsh \
+				--net=host --entrypoint=/bin/bash \
 				--cap-add=NET_ADMIN \
 				-e DISPLAY=$DISPLAY -e DOMAIN=$DOMAIN \
 				-e TARGET=$TARGET -e IP=$IP -e TZ=$TIME_ZONE -e NAME=$1 \
@@ -43,7 +43,7 @@ kali-dev() {
 				-w /$1 fonalex45/kali-sec:dev
 	else
 		docker run --name $1 -it \
-			--net=host --entrypoint=/bin/zsh \
+			--net=host --entrypoint=/bin/bash \
 			--cap-add=NET_ADMIN \
 			-e DOMAIN=$DOMAIN -e DISPLAY=$DISPLAY \
 			-e TARGET=$TARGET -e IP=$IP \
@@ -55,11 +55,11 @@ kali-dev() {
 }
 
 start() {
-	docker container start $1 && docker container exec -it $1 /bin/zsh
+	docker container start $1 && docker container exec -it $1 /bin/bash
 }
 
 enter() {
-	docker exec -it $1 /bin/zsh
+	docker exec -it $1 /bin/bash
 }
 
 stop() {
