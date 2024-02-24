@@ -1,0 +1,16 @@
+[user]
+	email = fonalex45@gmail.com
+	name = alexrf45
+  signingKey = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIL6PBrFG/40s+xPmNv4ljmZPvKgVcTY8oWGc5NFbgYru fr3d"
+[init]
+	defaultBranch = main
+[commit]
+	gpgsign = true
+[alias]
+	logs = log --show-signature
+[core]
+	editor = nvim
+[gpg]
+	format = ssh
+[gpg "ssh"]
+	allowedSignersFile = /home/fr3d/.config/git/allowed_signers

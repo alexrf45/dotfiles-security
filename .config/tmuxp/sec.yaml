@@ -1,0 +1,15 @@
+session_name: fr3d
+windows:
+  - window_name: local
+    layout: tiled
+    panes:
+      -
+  - window_name: remote
+    layout: tiled
+    panes:
+      - shell_command:
+        - 
+  - window_name: file explorer
+    layout: tiled
+    panes:
+      - ranger

@@ -1,0 +1,38 @@
+[global_config]
+  borderless = True
+  enabled_plugins = LaunchpadBugURLHandler, LaunchpadCodeURLHandler, APTURLHandler, TerminatorThemes
+  always_split_with_profile = True
+[keybindings]
+[profiles]
+  [[default]]
+  [[Report]]
+    background_color = "#ffffff"
+    cursor_shape = underline
+    font = Iosevka Nerd Font Mono Heavy Oblique 13
+    foreground_color = "#000000"
+    show_titlebar = False
+    use_system_font = False
+  [[Hack]]
+    icon_bell = False
+    background_color = "#1a2332"
+    cursor_shape = ibeam
+    cursor_fg_color = "#ffffff"
+    cursor_bg_color = "#000000"
+    cursor_color_default = False
+    font = JetBrains Mono Bold 13
+    foreground_color = "#a4b1cd"
+    show_titlebar = False
+    scrollbar_position = hidden
+    scrollback_infinite = True
+    palette = "#000000:#ff3e3e:#9fef00:#ffaf00:#004cff:#9f00ff:#2ee7b6:#ffffff:#666666:#ff8484:#c5f467:#ffcc5c:#5cb2ff:#c16cfa:#5cecc6:#ffffff"
+    use_system_font = False
+[layouts]
+  [[default]]
+    [[[window0]]]
+      type = Window
+      parent = ""
+    [[[child1]]]
+      type = Terminal
+      parent = window0
+      profile = Hack
+[plugins]

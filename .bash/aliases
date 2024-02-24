@@ -1,0 +1,63 @@
+#arch commands
+alias :r='. ~/.bashrc'
+alias update='sudo apt update'
+alias upgrade='sudo apt-get upgrade -y'
+alias i='sudo apt install -y'
+alias ls='ls --color=auto'
+alias home='cd ~'
+alias tree-overview='tree -CDL 2'
+alias tree-1='tree -CL 2'
+alias lock='cmatrix -r'
+alias vim='nvim'
+alias c='clear'
+alias pass-gen='python3 ~/.config/scripts/password-gen.py'
+alias weather='curl https://wttr.in'
+alias :q='exit'
+
+alias webserver="miniserve -p 8001"
+
+#blog
+alias blog='rsync -rv $HOME/projects/fr3d.dev/public/ pgs.sh:/dev'
+alias p-blog='rsync $HOME/brain-child/fr3d/daily/* prose.sh:/'
+
+#notes
+alias notes='docker run -d --name memos -p 5230:5230 -v ~/.memos/:/var/opt/memos neosmemo/memos:stable'
+
+#tmux
+alias t='tmux new -f ~/.tmux.conf -s $1'
+
+#networking
+alias public='curl wtfismyip.com/text'
+
+#docker
+alias d='docker'
+alias dls='docker image ls'
+alias di='docker image'
+alias dcls='docker container ls'
+alias dps='docker ps'
+alias dnt='docker network'
+alias dnuke="docker stop \$(docker ps -a -q); docker rm -f \$(docker ps -a -q); docker rmi -f \$(docker images -a -q); docker volume rm -f \$(docker volume ls -q)"
+
+#docker build
+alias build='docker build -t $1 .'
+
+#docker compose
+alias d-up='docker-compose up -d'
+alias d-down='docker-compose down'
+
+alias dot='/usr/bin/git --git-dir=/home/$USER/.cfg/.git --work-tree=/home/$USER'
+alias status='/usr/bin/git --git-dir=/home/$USER/.cfg/.git --work-tree=/home/$USER status'
+alias commit='/usr/bin/git --git-dir=/home/$USER/.cfg/.git --work-tree=/home/$USER commit -am'
+alias push='/usr/bin/git --git-dir=/home/$USER/.cfg/.git --work-tree=/home/$USER push'
+
+timestamp() {
+	date +%Y%m%d-%T
+}
+function up()
+{
+    for i in `seq 1 $1`;
+    do
+        cd ../
+    done;
+}
+
