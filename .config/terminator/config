@@ -15,16 +15,15 @@
   [[Hack]]
     icon_bell = False
     background_color = "#1a2332"
-    cursor_shape = ibeam
-    cursor_fg_color = "#ffffff"
-    cursor_bg_color = "#000000"
-    cursor_color_default = False
+    cursor_shape = underline
+    cursor_fg_color = "#000000"
+    cursor_bg_color = "#aaaaaa"
     font = JetBrains Mono Bold 13
     foreground_color = "#a4b1cd"
     show_titlebar = False
     scrollbar_position = hidden
     scrollback_infinite = True
-    palette = "#000000:#ff3e3e:#9fef00:#ffaf00:#004cff:#9f00ff:#2ee7b6:#ffffff:#666666:#ff8484:#c5f467:#ffcc5c:#5cb2ff:#c16cfa:#5cecc6:#ffffff"
+    palette = "#000000:#ff3e3e:#9fef00:#ffaf00:#a4b1cd:#9f00ff:#2ee7b6:#ffffff:#666666:#ff8484:#c5f467:#ffcc5c:#5cb2ff:#c16cfa:#5cecc6:#ffffff"
     use_system_font = False
 [layouts]
   [[default]]
