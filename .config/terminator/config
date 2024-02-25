@@ -12,19 +12,20 @@
     foreground_color = "#000000"
     show_titlebar = False
     use_system_font = False
-  [[Hurtado]]
+  [[Dracula]]
     icon_bell = False
+    background_color = "#282a36"
     background_darkness = 0.82
     background_type = transparent
     cursor_shape = underline
     cursor_fg_color = "#000000"
-    cursor_bg_color = "#bbbbbb"
+    cursor_bg_color = "#aaaaaa"
     font = DejaVu Sans Mono Bold 13
-    foreground_color = "#dbdbdb"
+    foreground_color = "#f8f8f2"
     show_titlebar = False
     scrollbar_position = hidden
     scrollback_infinite = True
-    palette = "#575757:#ff1b00:#a5e055:#fbe74a:#496487:#fd5ff1:#86e9fe:#cbcccb:#262626:#d51d00:#a5df55:#fbe84a:#89beff:#c001c1:#86eafe:#dbdbdb"
+    palette = "#44475a:#ff5555:#50fa7b:#f1fa8c:#8be9fd:#bd93f9:#ff79c6:#94a3a5:#000000:#ff5555:#50fa7b:#f1fa8c:#8be9fd:#bd93f9:#ff79c6:#ffffff"
     use_system_font = False
 [layouts]
   [[default]]
@@ -34,5 +35,5 @@
     [[[child1]]]
       type = Terminal
       parent = window0
-      profile = Hurtado
+      profile = Dracula
 [plugins]

@@ -1,13 +1,30 @@
+-- return {
+--   -- add gruvbox
+--   --{ "kdheepak/monochrome.nvim" },
+--   --{ "audibleblink/hackthebox.vim" },
+--   { "Mofiqul/dracula.nvim" },
+--   -- Configure LazyVim to load gruvbox
+--   {
+--     "LazyVim/LazyVim",
+--     opts = {
+--       theme = "dracula",
+--       colorscheme = "dracula",
+--       background = "dark",
+--       transparent = true,
+--     },
+--   },
+-- }
+
 return {
-  -- add gruvbox
-  --{ "kdheepak/monochrome.nvim" },
-  { "audibleblink/hackthebox.vim" },
-  -- Configure LazyVim to load gruvbox
+  -- add dracula
+  { "Mofiqul/dracula.nvim" },
+
+  -- Configure LazyVim to load dracula
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "hackthebox",
-      background = "dark",
+      colorscheme = "dracula",
+      transparent_bg = true,
     },
   },
 }
