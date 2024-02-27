@@ -12,21 +12,19 @@
     foreground_color = "#000000"
     show_titlebar = False
     use_system_font = False
-  [[Dracula]]
-    icon_bell = False
-    background_color = "#282a36"
-    background_darkness = 0.82
-    background_type = transparent
+  [[Hack]]
+    background_color = "#1f1f28"
     cursor_shape = underline
-    cursor_fg_color = "#000000"
-    cursor_bg_color = "#aaaaaa"
-    font = DejaVu Sans Mono Bold 13
-    foreground_color = "#f8f8f2"
+    font = Noto Sans Mono Bold 13
+    foreground_color = "#dcd7ba"
     show_titlebar = False
     scrollbar_position = hidden
     scrollback_infinite = True
-    palette = "#44475a:#ff5555:#50fa7b:#f1fa8c:#8be9fd:#bd93f9:#ff79c6:#94a3a5:#000000:#ff5555:#50fa7b:#f1fa8c:#8be9fd:#bd93f9:#ff79c6:#ffffff"
+    palette = "#2a2a37:#e82424:#76946a:#dca561:#658594:#957fb8:#7aa89f:#dcd7ba:#727169:#c34043:#98bb6c:#ff9e3b:#7e9cd8:#938aa9:#a3d4d5:#c8c093"
     use_system_font = False
+    title_hide_sizetext = True
+    title_use_system_font = False
+  [[Gruvbox Dark]]
 [layouts]
   [[default]]
     [[[window0]]]
@@ -35,5 +33,5 @@
     [[[child1]]]
       type = Terminal
       parent = window0
-      profile = Dracula
+      profile = Hack
 [plugins]
