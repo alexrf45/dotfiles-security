@@ -13,7 +13,7 @@
     show_titlebar = False
     use_system_font = False
   [[Hack]]
-    background_color = "#1f1f28"
+    background_color = "#191717"
     cursor_shape = underline
     font = Noto Sans Mono Bold 13
     foreground_color = "#dcd7ba"

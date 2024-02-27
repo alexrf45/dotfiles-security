@@ -21,7 +21,7 @@ bind 'TAB:menu-complete'
 #PS1='\[\e[97m\]\W\[\e[0m\] \[\e[38;5;107m\]${PS1_CMD1}\[\e[0m\] ${PS1_CMD2}\$ '
 
 PROMPT_COMMAND='PS1_CMD1=$(echo $AWS_VAULT); PS1_CMD2=$(git branch 2>/dev/null | grep '"'"'*'"'"' | colrm 1 2)'
-PS1='\[\e[38;5;214m\]${PS1_CMD1}\[\e[38;5;68m\] \W \[\e[92m\]${PS1_CMD2}\[\e[0m\]\n \$ '
+PS1='\[\e[38;5;214m\]${PS1_CMD1}\[\e[0m\] \W \[\e[92m\]${PS1_CMD2}\[\e[0m\]\n \$ '
 
 complete -C '/usr/local/bin/aws_completer' aws
 
