@@ -15,8 +15,8 @@
   [[Hack]]
     background_color = "#191717"
     cursor_shape = underline
-    font = Noto Sans Mono Bold 13
-    foreground_color = "#dcd7ba"
+    font = Iosevka Nerd Font Mono Bold Italic 13
+    foreground_color = "#c8c093"
     show_titlebar = False
     scrollbar_position = hidden
     scrollback_infinite = True
@@ -24,7 +24,6 @@
     use_system_font = False
     title_hide_sizetext = True
     title_use_system_font = False
-  [[Gruvbox Dark]]
 [layouts]
   [[default]]
     [[[window0]]]

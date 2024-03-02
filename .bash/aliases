@@ -110,7 +110,8 @@ alias brain-backup='aws s3 sync --delete ~/brain-child/fr3d/. s3://brain-child-b
 alias tf='terraform'
 alias tfi='terraform init'
 alias tfir='terraform init -backend-config="remote.tfbackend" -upgrade'
-alias tlint='terraform fmt && terraform validate'
+alias tflint='terraform fmt && terraform validate'
+alias tfv='terraform validate'
 alias tfp='terraform plan'
 alias tfa='terraform apply'
 alias tfs='terraform state'
@@ -122,14 +123,14 @@ alias cost='infracost breakdown --path=.'
 #kubernetes
 #
 
-alias k='docker run --rm --name kubectl -v $HOME/.kube:/.kube bitnami/kubectl:latest'
+alias k='docker run --rm --name kk -it -v $HOME/.kube:/home/nonroot/.kube -w /home/nonroot/.kube cgr.dev/chainguard/kubectl:latest'
 alias k9s='docker run --rm -it -v $HOME/.config/k9s/skins:/root/.config/k9s/skins -v ~/.kube/config:/root/.kube/config quay.io/derailed/k9s'
-alias kd='docker run --rm --name kubectl -v $HOME/.kube:/.kube bitnami/kubectl:latest delete'
-alias kg='docker run --rm --name kubectl -v $HOME/.kube:/.kube bitnami/kubectl:latest get'
-alias kgn='docker run --rm --name kubectl -v $HOME/.kube:/.kube bitnami/kubectl:latest get nodes'
-alias kl='docker run --rm --name kubectl -v $HOME/.kube:/.kube bitnami/kubectl:latest logs'
-alias kgp='docker run --rm --name kubectl -v $HOME/.kube:/.kube bitnami/kubectl:latest get pods'
-alias ksecrets='docker run --rm --name kubectl -v $HOME/.kube:/.kube bitnami/kubectl:latest describe secrets'
+alias kd='docker run --rm --name kk -it -v $HOME/.kube:/home/nonroot/.kube -w /home/nonroot/.kube cgr.dev/chainguard/kubectl delete'
+alias kg='docker run --rm --name kk -it -v $HOME/.kube:/home/nonroot/.kube -w /home/nonroot/.kube cgr.dev/chainguard/kubectl get'
+alias kgn='docker run --rm --name kk -it -v $HOME/.kube:/home/nonroot/.kube -w /home/nonroot/.kube cgr.dev/chainguard/kubectl get nodes'
+alias kl='docker run --rm --name kk -it -v $HOME/.kube:/home/nonroot/.kube -w /home/nonroot/.kube cgr.dev/chainguard/kubectl logs'
+alias kgp='docker run --rm --name kk -it -v $HOME/.kube:/home/nonroot/.kube -w /home/nonroot/.kube cgr.dev/chainguard/kubectl get pods'
+alias ksercrets='docker run --rm --name kk -it -v $HOME/.kube:/home/nonroot/.kube -w /home/nonroot/.kube cgr.dev/chainguard/kubectl describe secrets'
 
 #argocli
 
