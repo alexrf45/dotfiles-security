@@ -1,12 +1,12 @@
 return {
   -- add dracula
-  { "rebelot/kanagawa.nvim" },
+  { "sainnhe/gruvbox-material" },
 
   -- Configure LazyVim to load dracula
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "kanagawa-dragon",
+      colorscheme = "gruvbox-material",
     },
   },
 }
