@@ -33,3 +33,11 @@ virtual_env() {
 		virtualenv .venv &&
 		source .venv/bin/activate
 }
+
+aws_cli() {
+	docker run --rm \
+		-it \
+		-e AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID} \
+		-e AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY} \
+		cgr.dev/chainguard/aws-cli:latest $1 $2 $3
+}
