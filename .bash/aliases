@@ -1,8 +1,7 @@
 #arch commands
 alias :r='. ~/.bashrc'
-alias update='sudo apt update'
-alias upgrade='sudo apt-get upgrade -y'
-alias i='sudo apt install -y'
+alias update='sudo pacman -Syyu'
+alias i='sudo pacman -S'
 alias ls='ls --color=auto'
 alias home='cd ~'
 alias tree-overview='tree -CDL 2'
@@ -144,9 +143,9 @@ alias build='docker build -t $1 .'
 alias d-up='docker-compose up -d'
 alias d-down='docker-compose down'
 
-alias dot='/usr/bin/git --git-dir=/home/$USER/.cfg/.git --work-tree=/home/$USER'
-alias status='/usr/bin/git --git-dir=/home/$USER/.cfg/.git --work-tree=/home/$USER status'
-alias commit='/usr/bin/git --git-dir=/home/$USER/.cfg/.git --work-tree=/home/$USER commit -am'
-alias push='/usr/bin/git --git-dir=/home/$USER/.cfg/.git --work-tree=/home/$USER push'
+alias dot='/usr/bin/git --git-dir=/home/$USER/.cfg/ --work-tree=/home/$USER'
+alias status='/usr/bin/git --git-dir=/home/$USER/.cfg/ --work-tree=/home/$USER status'
+alias commit='/usr/bin/git --git-dir=/home/$USER/.cfg/ --work-tree=/home/$USER commit -am'
+alias push='/usr/bin/git --git-dir=/home/$USER/.cfg/ --work-tree=/home/$USER push'
 
 
