@@ -4,11 +4,11 @@ windows:
     layout: tiled
     panes:
       -
-  - window_name: remote
+  - window_name: notes
     layout: tiled
     panes:
       - shell_command:
-        - 
+        - vim $HOME/brain-child/fr3d/
   - window_name: file explorer
     layout: tiled
     panes:
