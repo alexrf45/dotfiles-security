@@ -14,6 +14,8 @@ alias pass-gen='python3 ~/.config/scripts/password-gen.py'
 alias weather='curl https://wttr.in'
 alias :q='exit'
 
+alias ua-drop-caches='sudo paccache -rk3; yay -Sc --aur --noconfirm'
+
 alias webserver="miniserve -p 8001"
 
 #blog
@@ -124,16 +126,24 @@ alias cost='infracost breakdown --path=.'
 #kubernetes
 #
 
-alias k='docker run --rm --name kk -it -v $HOME/.kube:/home/nonroot/.kube -w /home/nonroot/.kube cgr.dev/chainguard/kubectl:latest'
-alias k9s='docker run --rm -it -v $HOME/.config/k9s/skins:/root/.config/k9s/skins -v ~/.kube/config:/root/.kube/config quay.io/derailed/k9s'
-alias kd='docker run --rm --name kk -it -v $HOME/.kube:/home/nonroot/.kube -w /home/nonroot/.kube cgr.dev/chainguard/kubectl delete'
-alias kg='docker run --rm --name kk -it -v $HOME/.kube:/home/nonroot/.kube -w /home/nonroot/.kube cgr.dev/chainguard/kubectl get'
-alias kgn='docker run --rm --name kk -it -v $HOME/.kube:/home/nonroot/.kube -w /home/nonroot/.kube cgr.dev/chainguard/kubectl get nodes'
-alias kl='docker run --rm --name kk -it -v $HOME/.kube:/home/nonroot/.kube -w /home/nonroot/.kube cgr.dev/chainguard/kubectl logs'
-alias kgp='docker run --rm --name kk -it -v $HOME/.kube:/home/nonroot/.kube -w /home/nonroot/.kube cgr.dev/chainguard/kubectl get pods'
-alias ksercrets='docker run --rm --name kk -it -v $HOME/.kube:/home/nonroot/.kube -w /home/nonroot/.kube cgr.dev/chainguard/kubectl describe secrets'
+alias k='kubectl'
+alias kd='kubectl delete'
+alias kg='kubectl get'
+alias kgn='kubectl get nodes'
+alias kl='kubectl logs'
+alias kgp='kubectl get pods'
+alias ksercrets='kubectl describe secrets'
 
-#argocli
+# alias k='docker run --rm --name kk -it -v $HOME/.kube:/home/nonroot/.kube -w /home/nonroot/.kube cgr.dev/chainguard/kubectl:latest'
+# alias k9s='docker run --rm -it -v $HOME/.config/k9s/skins:/root/.config/k9s/skins -v ~/.kube/config:/root/.kube/config quay.io/derailed/k9s'
+# alias kd='docker run --rm --name kk -it -v $HOME/.kube:/home/nonroot/.kube -w /home/nonroot/.kube cgr.dev/chainguard/kubectl delete'
+# alias kg='docker run --rm --name kk -it -v $HOME/.kube:/home/nonroot/.kube -w /home/nonroot/.kube cgr.dev/chainguard/kubectl get'
+# alias kgn='docker run --rm --name kk -it -v $HOME/.kube:/home/nonroot/.kube -w /home/nonroot/.kube cgr.dev/chainguard/kubectl get nodes'
+# alias kl='docker run --rm --name kk -it -v $HOME/.kube:/home/nonroot/.kube -w /home/nonroot/.kube cgr.dev/chainguard/kubectl logs'
+# alias kgp='docker run --rm --name kk -it -v $HOME/.kube:/home/nonroot/.kube -w /home/nonroot/.kube cgr.dev/chainguard/kubectl get pods'
+# alias ksercrets='docker run --rm --name kk -it -v $HOME/.kube:/home/nonroot/.kube -w /home/nonroot/.kube cgr.dev/chainguard/kubectl describe secrets'
+#
+# #argocli
 
 alias argo='docker run -it --rm --name argo-cd -v $HOME/.kube:/.kube -v $HOME/.argocd/config:/.argocd/config bitnami/argo-cd:latest'
 

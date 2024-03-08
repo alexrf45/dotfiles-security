@@ -53,3 +53,14 @@ aws_cli() {
 		-e AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY} \
 		cgr.dev/chainguard/aws-cli:latest $1 $2 $3
 }
+
+arch-mirror() {
+	export TMPFILE="$(mktemp)"
+	sudo true
+	rate-mirrors --save=$TMPFILE arch --max-delay=21600 &&
+		sudo mv /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist-backup &&
+		sudo mv $TMPFILE /etc/pacman.d/mirrorlist &&
+		ua-drop-caches &&
+		yay -Syyu --noconfirm
+
+}
