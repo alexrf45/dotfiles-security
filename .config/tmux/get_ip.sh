@@ -4,7 +4,7 @@
 
 get_ip() {
 	for int in $@; do
-		ip addr show $int | grep -m 1 inet | awk '{print $2}' | cut -d / -f 1
+		ip addr show $int | grep -m 1 inet | awk '{print $2}' | cut -d / -f 1 | lolcat
 		#   ^^ I will be focusing on this line!
 	done
 }
