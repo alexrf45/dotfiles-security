@@ -1,13 +1,14 @@
 return {
   -- add dracula
-  -- { "sainnhe/gruvbox-material" },
-  { "olimorris/onedarkpro.nvim" },
+  --{ "sainnhe/gruvbox-material" },
+  { "rebelot/kanagawa.nvim" },
+  -- { "Yazeed1s/minimal.nvim" },
   -- Configure LazyVim to load dracula
   {
     "LazyVim/LazyVim",
     opts = {
-      -- colorscheme = "gruvbox-material",
-      colorscheme = "onedark_dark",
+      colorscheme = "kanagawa-dragon",
+      -- colorscheme = "minimal",
     },
   },
 }

@@ -13,7 +13,7 @@ alias py='python3'
 alias pass-gen='python3 ~/.config/scripts/password-gen.py'
 alias weather='curl https://wttr.in'
 alias :q='exit'
-
+alias pdf='zathura'
 alias ua-drop-caches='sudo paccache -rk3; yay -Sc --aur --noconfirm'
 
 alias webserver="miniserve -p 8001"
@@ -149,7 +149,7 @@ alias argo='docker run -it --rm --name argo-cd -v $HOME/.kube:/.kube -v $HOME/.a
 
 
 #docker build
-alias build='docker build -t $1 .'
+alias build='docker build'
 
 #docker compose
 alias d-up='docker-compose up -d'

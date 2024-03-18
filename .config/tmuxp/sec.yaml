@@ -9,10 +9,6 @@ windows:
     panes:
       - shell_command:
         - vim $HOME/brain-child/fr3d/
-  - window_name: file explorer
-    layout: tiled
-    panes:
-      - ranger
   - window_name: k9s
     layout: tiled
     panes:
