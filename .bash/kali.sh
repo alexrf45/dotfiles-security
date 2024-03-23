@@ -16,7 +16,7 @@ kali() {
 				-v $(pwd)/.kali-logs:$HOME/.logs:rw -v $(pwd):/$1 \
 				-v $HOME/.Xauthority:$HOME/.Xauthority:ro \
 				-v /tmp/.X11-unix:/tmp/.X11-unix \
-				-w /$1 fonalex45/kali-sec:latest
+				-w /$1 fonalex45/aegis:latest
 	else
 		docker run --name $1 -it \
 			--net=host --entrypoint=/bin/bash \
@@ -27,7 +27,7 @@ kali() {
 			-e TZ=$TIME_ZONE -e NAME=$1 \
 			-v $(pwd)/.kali-logs:/root/.logs:rw -v $(pwd):/$1 \
 			-v $HOME/.Xauthority:$HOME/.Xauthority:ro -v /tmp/.X11-unix:/tmp/.X11-unix \
-			-w /$1 fonalex45/kali-sec:latest
+			-w /$1 fonalex45/aegis:latest
 	fi
 }
 
@@ -43,7 +43,7 @@ kali-dev() {
 				-v $(pwd)/.kali-logs:$HOME/.logs:rw -v $(pwd):/$1 \
 				-v $HOME/.Xauthority:$HOME/.Xauthority:ro \
 				-v /tmp/.X11-unix:/tmp/.X11-unix \
-				-w /$1 fonalex45/kali-sec:dev
+				-w /$1 fonalex45/aegis:dev
 	else
 		docker run --name $1 -it \
 			--net=host --entrypoint=/bin/bash \
@@ -54,7 +54,7 @@ kali-dev() {
 			-e TZ=$TIME_ZONE -e NAME=$1 \
 			-v $(pwd)/.kali-logs:/root/.logs:rw -v $(pwd):/$1 \
 			-v $HOME/.Xauthority:$HOME/.Xauthority:ro -v /tmp/.X11-unix:/tmp/.X11-unix \
-			-w /$1 fonalex45/kali-sec:dev
+			-w /$1 fonalex45/aegis:dev
 	fi
 }
 
@@ -75,9 +75,9 @@ destroy() {
 }
 
 pull() {
-	docker pull fonalex45/kali-sec:latest
+	docker pull fonalex45/aegis:latest
 }
 
 pull-dev() {
-	docker pull fonalex45/kali-sec:dev
+	docker pull fonalex45/aegis:dev
 }
