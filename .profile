@@ -9,7 +9,6 @@ export AGENT='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTM
 export GOPATH=$HOME/.local/bin/go
 export GOROOT=$HOME/.local/bin/go/bin
 export GOPROXY='https://proxy.golang.org,direct'
-export GOSUMBDB='sum.golang.org'
 
 #RUST
 export RUSTUP_HOME="$HOME/.rustup"
