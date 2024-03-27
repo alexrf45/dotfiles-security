@@ -31,3 +31,5 @@ ssh-add ~/.ssh/jump >/dev/null 2>&1
 ssh-add ~/.ssh/lab >/dev/null 2>&1
 
 . "$HOME/.cargo/env"
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
