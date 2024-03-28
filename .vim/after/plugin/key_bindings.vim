@@ -1,4 +1,3 @@
-" ctrl-s to save
 nnoremap <C-s> :w<CR>
 
 " ctrl-p to open a file via fzf
@@ -12,3 +11,9 @@ nnoremap <leader>fed :cd ~/.vim<CR>:e ~/.vim/init.vim<CR>
 nnoremap <leader>fek :cd ~/.vim<CR>:e ~/.vim/after/plugin/key_bindings.vim<CR>
 " SPC-f-e-o to edit your options file
 nnoremap <leader>feo :cd ~/.vim<CR>:e ~/.vim/after/plugin/options.vim<CR>
+
+
+nnoremap <leader>n :NERDTreeFocus<CR>
+nnoremap <leader>e :NERDTree<CR>
+nnoremap <leader>t :NERDTreeToggle<CR>
+nnoremap <C-f> :NERDTreeFind<CR>

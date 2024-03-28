@@ -8,6 +8,7 @@ alias tree-overview='tree -CDL 2'
 alias tree-1='tree -CL 2'
 alias lock='cmatrix -r'
 alias vim='vim'
+alias edit-vim='vim $HOME/.vimrc'
 alias c='clear'
 alias py='python3'
 alias pass-gen='python3 ~/.config/scripts/password-gen.py'
@@ -15,11 +16,9 @@ alias weather='curl https://wttr.in'
 alias :q='exit'
 alias pdf='zathura'
 alias ua-drop-caches='sudo paccache -rk3; yay -Sc --aur --noconfirm'
-
 alias webserver="miniserve -p 8001"
 
 #blog
-alias blog='rsync -rv $HOME/projects/fr3d.dev/public/ pgs.sh:/dev'
 alias p-blog='rsync $HOME/brain-child/fr3d/daily/* prose.sh:/'
 
 #notes
