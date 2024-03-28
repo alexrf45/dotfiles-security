@@ -15,4 +15,4 @@ inoremap <expr> <cr> pumvisible() ? asyncomplete#close_popup() . "\<cr>" : "\<cr
 
 let g:airline_theme='base16_gruvbox_dark_hard'
 
-autocmd VimEnter * NERDTree | wincmd p
+" autocmd VimEnter * NERDTree | wincmd p

@@ -32,4 +32,5 @@ ssh-add ~/.ssh/lab >/dev/null 2>&1
 
 . "$HOME/.cargo/env"
 
+eval "$(fzf --bash)"
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash

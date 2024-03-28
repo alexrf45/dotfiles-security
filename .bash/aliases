@@ -17,7 +17,6 @@ alias :q='exit'
 alias pdf='zathura'
 alias ua-drop-caches='sudo paccache -rk3; yay -Sc --aur --noconfirm'
 alias webserver="miniserve -p 8001"
-
 #blog
 alias p-blog='rsync $HOME/brain-child/fr3d/daily/* prose.sh:/'
 

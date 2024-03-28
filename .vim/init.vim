@@ -20,6 +20,7 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'preservim/nerdtree'
 Plug 'ryanoasis/vim-devicons'
 Plug 'PhilRunninger/nerdtree-visual-selection'
+Plug 'dstein64/vim-startuptime'
 
 call plug#end()
 
