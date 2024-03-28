@@ -1,6 +1,15 @@
 " Enable 256-color by default in the terminal
 if !has('gui_running') | set t_Co=256 | endif
 
+if executable('terraform-ls')
+    au User lsp_setup call lsp#register_server({
+        \ 'name': 'terraform-ls',
+        \ 'cmd': {server_info->['terraform-ls', 'serve']},
+        \ 'whitelist': ['terraform'],
+        \ })
+endif
+
+
 " Hide line numbers by default
 set number
 set encoding=UTF-8

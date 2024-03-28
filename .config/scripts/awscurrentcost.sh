@@ -4,7 +4,7 @@
     aws ce get-cost-and-usage                                  \
         --time-period "Start=$START_DATE,End=$END_DATE"        \
         --metrics     'UnblendedCost'                          \
-        --granularity 'MONTHLY'                                \
+       --granularity 'MONTHLY'                                \
         --query       'ResultsByTime[*].Total.[UnblendedCost]' \
         --output      'table'                                  \
 )
