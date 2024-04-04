@@ -1,7 +1,7 @@
 return {
-  "rebelot/kanagawa.nvim",
+  "dracula/vim",
   priority = 100,
   config = function()
-    vim.cmd([[colorscheme kanagawa-dragon]])
+    vim.cmd([[colorscheme dracula]])
   end,
 }
