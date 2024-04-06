@@ -125,6 +125,8 @@ alias cost='infracost breakdown --path=.'
 #
 
 alias k='kubectl'
+alias ka='kubectl apply'
+alias kaf='kubectl apply -f'
 alias kd='kubectl delete'
 alias kg='kubectl get'
 alias kgn='kubectl get nodes'
