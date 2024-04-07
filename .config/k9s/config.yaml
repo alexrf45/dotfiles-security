@@ -11,7 +11,7 @@ k9s:
     logoless: true
     crumbsless: false
     reactive: false
-    skin: dracula
+    skin: transparent
     noIcons: false
   skipLatestRevCheck: false
   disablePodCounting: false
