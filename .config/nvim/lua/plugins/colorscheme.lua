@@ -1,7 +1,7 @@
 return {
-  "rebelot/kanagawa.nvim",
+  "sainnhe/gruvbox-material",
   priority = 100,
   config = function()
-    vim.cmd([[colorscheme pablo]])
+    vim.cmd([[colorscheme gruvbox-material]])
   end,
 }
