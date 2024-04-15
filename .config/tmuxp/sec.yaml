@@ -4,11 +4,6 @@ windows:
     layout: tiled
     panes:
       -
-  - window_name: notes
-    layout: tiled
-    panes:
-      - shell_command:
-        - vim $HOME/brain-child/fr3d/
   - window_name: k9s
     layout: tiled
     panes:
