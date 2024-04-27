@@ -101,6 +101,7 @@ alias aws-services-cost='~/.config/scripts/service-cost.sh'
 alias aws-current-cost='~/.config/scripts/awscurrentcost.sh'
 alias aws-cost-overall='~/.config/scripts/awscost.sh'
 alias s3-backend-delete='~/.config/scripts/./s3-backend-delete.sh'
+alias s3-file-list="aws s3api list-objects --query 'Contents[].Key' --output text"
 
 
 alias s3-create='python3 ~/.config/scripts/s3.py'
@@ -128,7 +129,7 @@ alias k='kubectl'
 alias ka='kubectl apply'
 alias kaf='kubectl apply -f'
 alias kc='kubectl create'
-alias kcf='kubectl create -f'
+alias create='kubectl create -f'
 
 alias kd='kubectl delete'
 alias kg='kubectl get'

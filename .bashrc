@@ -10,6 +10,8 @@ force_color_prompt=yes
 
 source "$HOME/.profile"
 
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+
 for file in $HOME/.bash/*; do
 	source "$file"
 done
