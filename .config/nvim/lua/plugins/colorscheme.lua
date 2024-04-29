@@ -1,7 +1,7 @@
 return {
-  "loctvl842/monokai-pro.nvim",
+  "sainnhe/gruvbox-material",
   priority = 100,
   config = function()
-    vim.cmd([[colorscheme monokai-pro]])
+    vim.cmd([[colorscheme gruvbox-material]])
   end,
 }
