@@ -2,6 +2,8 @@
 
 alias hackthebox='tmuxp load $HOME/.config/tmuxp/ctf.yaml'
 
+alias note-gen='cp -r brain-child/fr3d/4-archive/CTF_TEMPLATE/ brain-child/fr3d/1-projects/HackTheBox/'
+
 #Juiceshop
 alias juiceshop='docker run --name juiceshop -d --rm -p 3000:3000 bkimminich/juice-shop'
 
