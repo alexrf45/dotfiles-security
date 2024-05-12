@@ -1,7 +1,7 @@
 return {
-  "sainnhe/gruvbox-material",
+  "mofiqul/dracula.nvim",
   priority = 100,
   config = function()
-    vim.cmd([[colorscheme gruvbox-material]])
+    vim.cmd([[colorscheme dracula]])
   end,
 }
