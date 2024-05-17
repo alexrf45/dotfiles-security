@@ -1,6 +1,6 @@
 return {
-  "projekt0n/github-nvim-theme",
+  "audibleblink/hackthebox.vim",
   config = function()
-    vim.cmd([[colorscheme github_dark_high_contrast]])
+    vim.cmd([[colorscheme hackthebox]])
   end,
 }
