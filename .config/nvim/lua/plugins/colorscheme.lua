@@ -1,7 +1,6 @@
 return {
-  "mofiqul/dracula.nvim",
-  priority = 100,
+  "projekt0n/github-nvim-theme",
   config = function()
-    vim.cmd([[colorscheme default]])
+    vim.cmd([[colorscheme github_dark_high_contrast]])
   end,
 }
