@@ -30,11 +30,12 @@ complete -C '/usr/local/bin/aws_completer' aws
 
 eval $(ssh-agent) >/dev/null 2>&1
 
-ssh-add ~/.ssh/fr3d >/dev/null 2>&1
 ssh-add ~/.ssh/home >/dev/null 2>&1
-ssh-add ~/.ssh/vps >/dev/null 2>&1
+ssh-add ~/.ssh/nodes_ssh >/dev/null 2>&1
+ssh-add ~/.ssh/etcd_ssh >/dev/null 2>&1
+ssh-add ~/.ssh/control_plane_ssh >/dev/null 2>&1
+ssh-add ~/.ssh/fr3d >/dev/null 2>&1
 ssh-add ~/.ssh/lab >/dev/null 2>&1
-ssh-add ~/.ssh/talos >/dev/null 2>&1
 
 . "$HOME/.cargo/env"
 
