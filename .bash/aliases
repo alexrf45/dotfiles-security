@@ -107,7 +107,7 @@ alias s3-file-list="aws s3api list-objects --query 'Contents[].Key' --output tex
 alias s3-create='python3 ~/.config/scripts/s3.py'
 
 alias brain-backup='aws s3 sync --delete ~/brain-child/fr3d/. s3://brain-child-backup'
-
+alias htb-backup='aws s3 sync --delete ~/HTB/. s3://ctf-repo'
 #terraform
 alias tf='terraform'
 alias tfi='terraform init'
