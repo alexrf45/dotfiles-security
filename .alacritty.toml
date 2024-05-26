@@ -1,5 +1,5 @@
 import = [
-    "~/.config/alacritty/k_dragon.toml"
+    "~/.config/alacritty/gruvbox_material_hard_dark.toml"
 ]
 
 [shell]
