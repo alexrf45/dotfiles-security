@@ -29,6 +29,10 @@ alias t='tmux new -f ~/.tmux.conf -s $1'
 #networking
 alias public='curl wtfismyip.com/text'
 
+#proxmox
+alias pve-shut='ansible-playbook -i $HOME/home-lab/proxmox/cluster-hosts/hosts.ini $HOME/home-lab/proxmox/cluster-hosts/shutdown.yaml -K'
+
+
 #git
 alias g='git'
 alias ga='git add'
