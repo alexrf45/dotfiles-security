@@ -18,6 +18,10 @@ alias pdf='zathura'
 alias ua-drop-caches='sudo paccache -rk3; yay -Sc --aur --noconfirm'
 alias webserver="miniserve -p 8001"
 
+
+#emacs
+alias emacs="emacsclient -c -a 'emacs'"
+
 #notes
 alias notes='docker run -d --name memos -p 5230:5230 -v ~/.memos/:/var/opt/memos neosmemo/memos:stable'
 
@@ -158,5 +162,7 @@ alias dot='/usr/bin/git --git-dir=/home/$USER/.cfg/ --work-tree=/home/$USER'
 alias status='/usr/bin/git --git-dir=/home/$USER/.cfg/ --work-tree=/home/$USER status'
 alias commit='/usr/bin/git --git-dir=/home/$USER/.cfg/ --work-tree=/home/$USER commit -am'
 alias push='/usr/bin/git --git-dir=/home/$USER/.cfg/ --work-tree=/home/$USER push'
+
+
 
 

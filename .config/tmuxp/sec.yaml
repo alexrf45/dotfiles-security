@@ -1,10 +1,14 @@
-session_name: fr3d
+session_name: dev
 windows:
-  - window_name: local
+  - window_name: k3s-config
     layout: tiled
     panes:
-      -
+      - cd ~/home-lab/kubernetes/
   - window_name: k9s
     layout: tiled
     panes:
       - k9s
+  - window_name: notes
+    layout: tiled
+    panes:
+      - vim ~/brain-child/fr3d/
