@@ -2,7 +2,6 @@
 alias :r='. ~/.bashrc'
 alias update='sudo pacman -Syyu'
 alias i='sudo pacman -S'
-alias ls='exa'
 alias home='cd ~'
 alias tree-overview='tree -CDL 2'
 alias tree-1='tree -CL 2'
@@ -65,10 +64,10 @@ alias gla='gl --all'
 
 #docker
 alias d='docker'
-alias dimls='docker image ls | docker-color-output'
+alias dimls='docker image ls'
 alias dim='docker image'
 alias dc='docker container'
-alias dps='docker ps | docker-color-output'
+alias dps='docker ps | lolcat'
 alias dnt='docker network'
 alias dnuke="docker stop \$(docker ps -a -q); docker rm -f \$(docker ps -a -q); docker rmi -f \$(docker images -a -q); docker volume rm -f \$(docker volume ls -q)"
 
