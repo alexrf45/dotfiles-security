@@ -3,7 +3,7 @@ windows:
   - window_name: kali
     layout: tiled
     panes:
-      -
+      - cd ~/HTB/
   - window_name: vpn
     layout: tiled
     panes:

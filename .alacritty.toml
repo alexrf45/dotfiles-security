@@ -16,7 +16,7 @@ decorations = "None"
 startup_mode = "Maximized"
 
 [cursor]
-style = "beam"
+style = "underline"
 thickness = 0.3
 
 
