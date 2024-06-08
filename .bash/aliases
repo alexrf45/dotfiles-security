@@ -16,7 +16,11 @@ alias :q='exit'
 alias pdf='zathura'
 alias ua-drop-caches='sudo paccache -rk3; yay -Sc --aur --noconfirm'
 alias webserver="miniserve -p 8001"
-
+alias pomo='pomodoro-cli'
+alias work='pomodoro-cli start --duration "25m" '
+alias break='pomodoro-cli start --duration "5m"'
+alias long-break='pomodoro-cli start --duration "30m" '
+alias pomo-status='pomodoro-cli status --format human | lolcat'
 
 #emacs
 alias emacs="emacsclient -c -a 'emacs'"

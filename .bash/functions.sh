@@ -51,7 +51,7 @@ aws_cli() {
 		-it \
 		-e AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID} \
 		-e AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY} \
-		cgr.dev/chainguard/aws-cli:latest $1 $2 $3
+		cgr.dev/chainguard/aws-cli:latest $*
 }
 
 arch-mirror() {
@@ -64,3 +64,17 @@ arch-mirror() {
 		yay -Syyu --noconfirm
 
 }
+
+# pomo() {
+# 	arg1=$1
+# 	shift
+# 	args="$*"
+#
+# 	min=${arg1:?Example: pomo 15 Take a break}
+# 	sec=$((min * 60))
+# 	msg="${args:?Example: pomo 15 Take a break}"
+#
+# 	while true; do
+# 		sleep "${sec:?}" && echo "${msg:?}" && notify-send -u critical -t 0 "${msg:?}"
+# 	done
+# }
