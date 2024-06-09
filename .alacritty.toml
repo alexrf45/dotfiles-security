@@ -25,14 +25,14 @@ history = 20000
 
 [font]
 
-#normal = { family="Hack" , style = "Bold"}
+normal = { family="Hack" , style = "Bold"}
 #normal = { family="Anonymous Pro" , style = "Bold"}
 #normal = { family="Monospace" , style = "Bold"}
 #normal = { family="JetBrainsMono Nerd Font Propo" , style = "Bold"}
-normal = { family="Iosevka Nerd Font Propo" , style = "Heavy"}
+#normal = { family="Iosevka Nerd Font Propo" , style = "Heavy"}
 
 #normal = { family="Free Mono" , style = "Bold"}
-size = 13
+size = 12
 
 [selection]
 save_to_clipboard = true
