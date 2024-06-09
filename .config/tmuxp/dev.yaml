@@ -1,0 +1,18 @@
+session_name: dev
+windows:
+  - window_name: local
+    layout: tiled
+    panes:
+      - cd ~/home-lab/
+  - window_name: notes
+    layout: tiled
+    panes:
+      - cd ~/brain-child/fr3d/
+  - window_name: ssh
+    layout: tiled
+    panes:
+      - ssh horus
+      - ssh bastet
+      - ssh osiris
+      - ssh anubis
+      - ssh amun
