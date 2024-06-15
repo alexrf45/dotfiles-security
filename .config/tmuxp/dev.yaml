@@ -8,11 +8,4 @@ windows:
     layout: tiled
     panes:
       - cd ~/brain-child/fr3d/
-  - window_name: ssh
-    layout: tiled
-    panes:
-      - ssh horus
-      - ssh bastet
-      - ssh osiris
-      - ssh anubis
-      - ssh amun
+      - cd ~/notes/
