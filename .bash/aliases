@@ -34,8 +34,6 @@ alias t='tmux new -f ~/.tmux.conf -s $1'
 #networking
 alias public='curl wtfismyip.com/text'
 
-#home lab
-alias srv-install='ansible-playbook -i $HOME/home-lab/egypt/lab.ini $HOME/home-lab/egypt/install.yaml'
 
 #git
 alias g='git'

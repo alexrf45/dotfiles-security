@@ -8,7 +8,7 @@ alias note-gen='cp -r brain-child/fr3d/4-archive/CTF_TEMPLATE/ brain-child/fr3d/
 alias juiceshop='docker run --name juiceshop -d --rm -p 3000:3000 bkimminich/juice-shop'
 
 #CTF Aliases
-alias htb='sudo openvpn ~/.config/openvpn/lab_f0zy.ovpn'
+alias htb='sudo openvpn ~/.config/openvpn/lab_fr3dzz.ovpn'
 alias htb-season='sudo openvpn ~/.config/openvpn/competitive_f0zy.ovpn'
 alias fortress='sudo openvpn ~/.config/openvpn/fortresses_f0zy.ovpn'
 alias tryhackme='sudo openvpn ~/.config/openvpn/fr3ds.ovpn'
