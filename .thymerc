@@ -1,0 +1,9 @@
+timer: 1500               # seconds per pomodoro
+timer_break: 300          # seconds per break
+timer_warning: 300        # seconds left to show warning
+repeat: 4                 # default times to repeat
+color_default: "default"  # color for pomodoros
+color_warning: "red"      # color for pomodoros warnings
+color_break: "default"    # color for breaks
+status_align: "left"      # "left" or "right" in tmux
+status_override: false
