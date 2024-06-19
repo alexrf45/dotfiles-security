@@ -1,7 +1,7 @@
 [user]
 	email = fonalex45@gmail.com
 	name = alexrf45
-  signingKey = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIArKDGUdrBLu0sodYo9IVHrYA7fPVpugZZqOF2UVT9Zn fr3d"
+  signingKey = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAINP0/iZFFsPEYXXRMAycICuORHZ2dmkR7UiEXwOMdunO fr3d"
 [init]
 	defaultBranch = main
 [commit]

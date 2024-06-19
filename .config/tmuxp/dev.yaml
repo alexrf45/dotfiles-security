@@ -7,5 +7,4 @@ windows:
   - window_name: notes
     layout: tiled
     panes:
-      - cd ~/brain-child/fr3d/
-      - cd ~/notes/
+      - vim $HOME/notes/
