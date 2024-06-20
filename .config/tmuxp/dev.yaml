@@ -3,8 +3,8 @@ windows:
   - window_name: local
     layout: tiled
     panes:
-      - cd ~/home-lab/
+      - edit ~/home-lab/
   - window_name: notes
     layout: tiled
     panes:
-      - v $HOME/notes/
+      - edit $HOME/notes/
