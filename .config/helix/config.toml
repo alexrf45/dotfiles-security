@@ -36,9 +36,11 @@ w = "move_line_up" # Maps the 'w' key move_line_up
 "C-S-esc" = "extend_line" # Maps Ctrl-Shift-Escape to extend_line
 g = { a = "code_action" } # Maps `ga` to show possible code actions
 "ret" = ["open_below", "normal_mode"] # Maps the enter key to open_below then re-enter normal mode
+C-g = ":sh tmux popup -d \"#{pane_current_path}\" -xC -yC -w80% -h80% -E lazygit"
 
 [keys.insert]
 j = { k = "normal_mode" } # Maps `jk` to exit insert mode
+
 [keys.normal."t"]
 i=":run-shell-command terraform init -backend-config='remote.tfbackend' -upgrade"
 p=":run-shell-command terraform plan -out='plan'"
