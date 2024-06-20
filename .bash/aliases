@@ -31,7 +31,7 @@ alias notes='docker run -d --name memos -p 5230:5230 -v ~/.memos/:/var/opt/memos
 
 #tmux
 alias t='tmux new -f ~/.tmux.conf -s $1'
-
+alias project='tmuxp load $1' 
 #networking
 alias public='curl wtfismyip.com/text'
 
