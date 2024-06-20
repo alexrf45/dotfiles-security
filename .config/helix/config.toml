@@ -8,11 +8,10 @@ auto-save = true
 auto-format = true
 
 [editor.statusline]
-left = ["mode", "spinner"]
+left = ["mode", "spinner","version-control"]
 center = ["file-name"]
 right = ["diagnostics", "selections", "position", "file-encoding", "file-line-ending", "file-type"]
 separator = "│"
-version-control = true
 mode.normal = "NORMAL"
 mode.insert = "INSERT"
 mode.select = "SELECT"
@@ -28,3 +27,19 @@ select = "underline"
 
 [editor.file-picker]
 hidden = false
+
+[keys.normal]
+C-s = ":w" # Maps Ctrl-s to the typable command :w which is an alias for :write (save file)
+C-o = ":open ~/.config/helix/config.toml" # Maps Ctrl-o to opening of the helix config file
+a = "move_char_left" # Maps the 'a' key to the move_char_left command
+w = "move_line_up" # Maps the 'w' key move_line_up
+"C-S-esc" = "extend_line" # Maps Ctrl-Shift-Escape to extend_line
+g = { a = "code_action" } # Maps `ga` to show possible code actions
+"ret" = ["open_below", "normal_mode"] # Maps the enter key to open_below then re-enter normal mode
+
+[keys.insert]
+j = { k = "normal_mode" } # Maps `jk` to exit insert mode
+[keys.normal."t"]
+i=":run-shell-command terraform init -backend-config='remote.tfbackend' -upgrade"
+p=":run-shell-command terraform plan -out='plan'"
+a=":run-shell-command terraform apply -auto-approve 'plan'"
