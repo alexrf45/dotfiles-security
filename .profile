@@ -1,8 +1,8 @@
 export PATH="$PATH:$HOME/.local/bin:$HOME/.pulumi/bin:$HOME/.cargo/bin/:$HOME/.npm-global/bin:$GOPATH:$GOROOT"
 
-export EDITOR=nvim
+export EDITOR=helix
 export TERM='xterm-256color'
-export VISUAL=nvim
+export VISUAL=helix
 export TMUX_SCRIPT="$HOME/.config/tmux"
 export AGENT='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36'
 
