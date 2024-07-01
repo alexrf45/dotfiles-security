@@ -3,7 +3,7 @@ windows:
   - window_name: local
     layout: tiled
     panes:
-      - edit ~/home-lab/
+      - yazi
   - window_name: notes
     layout: tiled
     panes:

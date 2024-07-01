@@ -17,11 +17,8 @@ alias :q='exit'
 alias pdf='zathura'
 alias ua-drop-caches='sudo paccache -rk3; yay -Sc --aur --noconfirm'
 alias webserver="miniserve -p 8001"
-alias pomo='pomodoro-cli'
-alias work='pomodoro-cli start --duration "25m" '
-alias break='pomodoro-cli start --duration "5m"'
-alias long-break='pomodoro-cli start --duration "30m" '
-alias pomo-status='pomodoro-cli status --format human | lolcat'
+alias pomo='thyme'
+alias review='git log --graph --oneline --decorate'
 
 #emacs
 alias emacs="emacsclient -c -a 'emacs'"
@@ -72,6 +69,10 @@ alias dc='docker container'
 alias dps='docker ps | lolcat'
 alias dnt='docker network'
 alias dnuke="docker stop \$(docker ps -a -q); docker rm -f \$(docker ps -a -q); docker rmi -f \$(docker images -a -q); docker volume rm -f \$(docker volume ls -q)"
+
+alias portainer='docker run --name portainer -p 9000:9000 -d -v "/var/run/docker.sock:/var/run/docker.sock" portainer/portainer-ce:latest'
+alias portainerstop='docker stop portainer'
+alias portainerstart='docker start portainer'
 
 #lazy-docker
 
