@@ -74,6 +74,10 @@ alias portainer='docker run --name portainer -p 9000:9000 -d -v "/var/run/docker
 alias portainerstop='docker stop portainer'
 alias portainerstart='docker start portainer'
 
+alias tailscale='docker run -d --name=tailscaled -v /var/lib:/var/lib -v /dev/net/tun:/dev/net/tun --network=host --cap-add=NET_ADMIN --cap-add=NET_RAW tailscale/tailscale'
+alias tailup='docker start tailscaled'
+alias taildown='docker stop tailscaled'
+alias taillogin='docker exec tailscaled tailscale --socket /tmp/tailscaled.sock status'
 #lazy-docker
 
 alias lzd='docker run --rm -it -v /var/run/docker.sock:/var/run/docker.sock -v /yourpath:/.config/jesseduffield/lazydocker lazyteam/lazydocker'
