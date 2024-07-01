@@ -1,11 +1,15 @@
-git-new() {
-	[ -d "$1" ] || mkdir "$1" &&
-		cd "$1" &&
-		git init &&
-		touch .gitignore &&
-		git add .gitignore &&
-		git commit -m "Add .gitignore."
+man() {
+	env LESS_TERMCAP_mb=$'\E[01;31m' \
+		LESS_TERMCAP_md=$'\E[01;38;5;74m' \
+		LESS_TERMCAP_me=$'\E[0m' \
+		LESS_TERMCAP_se=$'\E[0m' \
+		LESS_TERMCAP_so=$'\E[01;33;03;40m' \
+		LESS_TERMCAP_ue=$'\E[0m' \
+		LESS_TERMCAP_us=$'\E[04;38;5;146m' \
+		man "$@"
 }
+
+
 
 extract() {
 	if [ -f $1 ]; then
@@ -28,15 +32,9 @@ extract() {
 }
 
 up() {
-	LIMIT=$1
-	P=$PWD
-
-	echo "Moving $LIMIT directories up from $P"
-
-	for ((i = 1; i <= LIMIT; i++)); do
-		P=$P/..
+	for i in $(seq 1 $1); do
+		cd ../
 	done
-	cd $P
 }
 
 virtual_env() {
@@ -65,16 +63,17 @@ arch-mirror() {
 
 }
 
-# pomo() {
-# 	arg1=$1
-# 	shift
-# 	args="$*"
-#
-# 	min=${arg1:?Example: pomo 15 Take a break}
-# 	sec=$((min * 60))
-# 	msg="${args:?Example: pomo 15 Take a break}"
-#
-# 	while true; do
-# 		sleep "${sec:?}" && echo "${msg:?}" && notify-send -u critical -t 0 "${msg:?}"
-# 	done
-# }
+timestamp() {
+	date +%Y%m%d-%T
+}
+
+git-new() {
+	[ -d "$1" ] || mkdir "$1" &&
+		cd "$1" &&
+		git init &&
+		touch .gitignore &&
+		git add .gitignore &&
+		git commit -m "Add .gitignore."
+}
+
+
