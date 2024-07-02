@@ -6,4 +6,4 @@ color_default: "default"  # color for pomodoros
 color_warning: "red"      # color for pomodoros warnings
 color_break: "default"    # color for breaks
 status_align: "left"      # "left" or "right" in tmux
-status_override: false
+status_override: true
