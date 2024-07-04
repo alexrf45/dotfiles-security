@@ -9,7 +9,7 @@
 [alias]
 	logs = log --show-signature
 [core]
-	editor = helix
+	editor = nvim
 [gpg]
 	format = ssh
 [gpg "ssh"]
