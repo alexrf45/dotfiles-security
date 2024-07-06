@@ -7,7 +7,7 @@ alias home='cd ~'
 alias tree-overview='tree -CDL 2'
 alias tree-1='tree -CL 2'
 alias lock='cmatrix -r'
-alias v='nvim'
+alias vim='nvim'
 #alias edit='helix'
 #alias edit-vim='vim $HOME/.vimrc'
 alias c='clear'
@@ -21,8 +21,6 @@ alias webserver="miniserve -p 8001"
 alias pomo='thyme'
 alias review='git log --graph --oneline --decorate'
 
-#emacs
-alias emacs="emacsclient -c -a 'emacs'"
 
 #notes
 alias notes='docker run -d --name memos -p 5230:5230 -v ~/.memos/:/var/opt/memos neosmemo/memos:stable'
