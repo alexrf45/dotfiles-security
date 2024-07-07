@@ -1,7 +1,7 @@
 # Colors (Nordic)
 
 [colors.primary]
-background = '#242933'
+background = '#2e3440'
 foreground = '#BBBDAF'
 
 [colors.normal]

@@ -7,9 +7,16 @@
 --   end,
 -- }
 
+-- return {
+--   "audibleblink/hackthebox.vim",
+--   config = function()
+--     vim.cmd([[colorscheme hackthebox]])
+--   end,
+-- }
 return {
-  "audibleblink/hackthebox.vim",
+  "andersevenrud/nordic.nvim",
+  version = false,
   config = function()
-    vim.cmd([[colorscheme hackthebox]])
+    vim.cmd([[colorscheme nordic]])
   end,
 }

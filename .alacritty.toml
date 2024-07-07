@@ -1,5 +1,5 @@
 import = [
-    "~/.config/alacritty/htb.toml"
+    "~/.config/alacritty/nordic.toml"
 ]
 
 [shell]
@@ -25,11 +25,11 @@ history = 20000
 
 [font]
 
-normal = { family="Hack" , style = "Bold"}
-#normal = { family="Courier New" , style = "Bold"}
+#normal = { family="Hack" , style = "Bold"}
+normal = { family="JetBrains Mono NL" , style = "Bold"}
 #normal = { family="Iosevka Nerd Font Propo" , style = "Heavy"}
 
-size = 12
+size = 13
 
 [selection]
 save_to_clipboard = true
