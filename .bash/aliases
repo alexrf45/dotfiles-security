@@ -8,161 +8,32 @@ alias tree-overview='tree -CDL 2'
 alias tree-1='tree -CL 2'
 alias lock='cmatrix -r'
 alias vim='nvim'
-#alias edit='helix'
-#alias edit-vim='vim $HOME/.vimrc'
 alias c='clear'
 alias py='python3'
-alias pass-gen='python3 ~/.config/scripts/password-gen.py'
 alias weather='curl https://wttr.in'
 alias :q='exit'
 alias pdf='zathura'
 alias ua-drop-caches='sudo paccache -rk3; yay -Sc --aur --noconfirm'
-alias webserver="miniserve -p 8001"
-alias pomo='thyme'
-alias review='git log --graph --oneline --decorate'
 
-
-#notes
+# temp notes
 alias notes='docker run -d --name memos -p 5230:5230 -v ~/.memos/:/var/opt/memos neosmemo/memos:stable'
 
 #tmux
 alias t='tmux new -f ~/.tmux.conf -s $1'
-alias project='tmuxp load $1' 
+
 #networking
 alias public='curl wtfismyip.com/text'
 
-
-#git
-alias g='git'
-alias ga='git add'
-alias gaa='git add --all'
-alias gb='git branch'
-alias gbd='git branch -d'
-alias gca='git commit -a'
-alias gcb='git checkout -b'
-alias gc='git clone'
-alias gcl='git clone --recurse-modules'
-alias clean='git reset --hard && git clean -dfxx'
-alias checkout='git checkout'
-alias gd='git diff'
-alias gf='git fetch'
-alias gfo='git fetch origin'
-alias gpl='git pull'
-alias gm='git merge'
-alias gp='git push'
-alias gs='git status'
-alias gt='git tag'
-alias gptf='git push --follow-tags'
-
-
-alias glog='git log --date-order --pretty="format:%C(yellow)%h%Cblue%d%Creset %s %C(white) %an, %ar%Creset"'
-alias gl='glog --graph'
-alias gla='gl --all'
-
-
-#docker
-alias d='docker'
-alias dimls='docker image ls'
-alias dim='docker image'
-alias dc='docker container'
-alias dps='docker ps | lolcat'
-alias dnt='docker network'
-alias dnuke="docker stop \$(docker ps -a -q); docker rm -f \$(docker ps -a -q); docker rmi -f \$(docker images -a -q); docker volume rm -f \$(docker volume ls -q)"
-
-alias portainer='docker run --name portainer -p 9000:9000 -d -v "/var/run/docker.sock:/var/run/docker.sock" portainer/portainer-ce:latest'
-alias portainerstop='docker stop portainer'
-alias portainerstart='docker start portainer'
-
+# temp tailscale connection
 alias tailscale='docker run -d --name=tailscaled -v /var/lib:/var/lib -v /dev/net/tun:/dev/net/tun --network=host --cap-add=NET_ADMIN --cap-add=NET_RAW tailscale/tailscale'
 alias tailup='docker start tailscaled'
 alias taildown='docker stop tailscaled'
 alias taillogin='docker exec tailscaled tailscale --socket /tmp/tailscaled.sock status'
-#lazy-docker
 
-alias lzd='docker run --rm -it -v /var/run/docker.sock:/var/run/docker.sock -v /yourpath:/.config/jesseduffield/lazydocker lazyteam/lazydocker'
-
-#python3
-
-alias py-virt='python3 -m venv .venv && source .venv/bin/activate'
-alias freeze='pip freeze > requirements.txt'
-alias py-install='pip install -r requirements.txt'
-alias py-list='pipx list | grep package'
-
-#aws-vault
-alias awsv-s='aws-vault exec Administrator'
-alias awsv='aws-vault exec Administrator --no-session'
-alias acct-adm-s='aws-vault exec account-admin --duration=2h'
-alias acct-adm='aws-vault exec account-admin --no-session'
-alias acct-adm-ui='aws-vault login account-admin'
-
-#aws cli aliases
-
-
-alias ec2-check='aws ec2 describe-instances --query "Reservations[*].Instances[*].{PublicIP:PublicIpAddress,PrivateIP:PrivateIpAddress,Name:Tags[?Key=='Name']|[0].Value,Type:InstanceType,Status:State.Name,VpcId:VpcId,Id:InstanceId}" --filters "Name=instance-state-name,Values=running" --output table'
-alias s3-list="aws s3api list-buckets | jq -r '.Buckets[].Name'"
-alias vpc-check='aws ec2 --output text --query "Vpcs[*].{VpcId:VpcId,Name:Tags[?Key=='Environment'].Value|[0],CidrBlock:CidrBlock}" describe-vpcs'
-alias s3-delete='aws s3api delete-bucket --bucket ${BUCKET}'
-alias iam-access-id-admin='aws iam get-user --user-name administrator | jq -r ".User | .UserId"'
-#cloud-nuke aws
-alias aws-nuke='cloud-nuke aws --exclude-resource-type s3 --exclude-resource-type iam --exclude-resource-type secretsmanager --exclude-resource-type dynamodb'
-alias aws-nuke-view-us-east-1='cloud-nuke inspect-aws --region us-east-1'
-
-alias aws-services-list='~/.config/scripts/./services.sh'
-alias aws-services-cost='~/.config/scripts/service-cost.sh'
-alias aws-current-cost='~/.config/scripts/awscurrentcost.sh'
-alias aws-cost-overall='~/.config/scripts/awscost.sh'
-alias s3-backend-delete='~/.config/scripts/./s3-backend-delete.sh'
-alias s3-file-list="aws s3api list-objects --query 'Contents[].Key' --output text"
-
-
-alias s3-create='python3 ~/.config/scripts/s3.py'
-
+#note backup
 alias brain-backup='aws s3 sync --delete ~/notes/. s3://notes-backup-primary'
-alias htb-backup='aws s3 sync --delete ~/HTB/. s3://ctf-repo'
-#terraform
-alias tf='terraform'
-alias tfi='terraform init'
-alias tfir='terraform init -backend-config="remote.tfbackend" -upgrade'
-alias tflint='terraform fmt && terraform validate'
-alias tfv='terraform validate'
-alias tfp='terraform plan'
-alias tfa='terraform apply'
-alias tfs='terraform state'
-alias tfsls='terraform state list'
-alias tfo='terraform output'
-alias tfd='terraform destroy'
-alias cost='infracost breakdown --path=.'
-alias docs='terraform-docs markdown table --hide modules --sort-by required --output-file README.md --output-mode inject ../'
-#kubernetes
-#
 
-alias k='kubectl'
-alias ka='kubectl apply'
-alias kaf='kubectl apply -f'
-alias kc='kubectl create'
-alias create='kubectl create -f'
-
-alias kd='kubectl delete'
-alias kg='kubectl get'
-alias kgns='kubectl get ns'
-alias kgn='kubectl get nodes'
-alias kl='kubectl logs'
-alias kgp='kubectl get pods'
-alias kcctx='k config get-contexts -o name'
-alias ksercrets='kubectl describe secrets'
-
-
-#argocli
-
-alias argo='docker run -it --rm --name argo-cd -v $HOME/.kube:/.kube -v $HOME/.argocd/config:/.argocd/config bitnami/argo-cd:latest'
-
-#docker build
-alias build='docker build'
-
-#docker compose
-alias d-up='docker-compose up -d'
-alias d-down='docker-compose down'
-
+#dot files
 alias dot='/usr/bin/git --git-dir=/home/$USER/.cfg/ --work-tree=/home/$USER'
 alias status='/usr/bin/git --git-dir=/home/$USER/.cfg/ --work-tree=/home/$USER status'
 alias commit='/usr/bin/git --git-dir=/home/$USER/.cfg/ --work-tree=/home/$USER commit -am'

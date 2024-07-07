@@ -73,3 +73,22 @@ git-new() {
     git add .gitignore &&
     git commit -m "Add .gitignore."
 }
+
+web-server() {
+  miniserve \
+    -t "fr3d" \
+    -v \
+    -F \
+    -H \
+    -c monokai \
+    -p 8001 \
+    --header "Cache-Control:no-cache" \
+    --auth-file ~/home-lab/auth.txt \
+    --tls-cert $HOME/.local/dev-cert.pem \
+    --tls-key $HOME/.local/dev-key.pem \
+    -u
+}
+
+cert-gen() {
+  mkcert -key-file $HOME/.local/$1-key.pem -cert-file $HOME/.local/$1-cert.pem localhost
+}
