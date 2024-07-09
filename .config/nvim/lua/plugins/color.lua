@@ -13,10 +13,22 @@
 --     vim.cmd([[colorscheme hackthebox]])
 --   end,
 -- }
+-- return {
+--   "olimorris/onedarkpro.nvim",
+--   priority = 1000, -- Ensure it loads first
+--   config = function()
+--     vim.cmd([[colorscheme onedark_dark]])
+--   end,
+-- }
+--
 return {
-  "olimorris/onedarkpro.nvim",
-  priority = 1000, -- Ensure it loads first
+  "sainnhe/everforest",
+  lazy = false,
+  priority = 1000,
   config = function()
-    vim.cmd([[colorscheme onedark_dark]])
+    -- Optionally configure and load the colorscheme
+    -- directly inside the plugin declaration.
+    vim.g.everforest_enable_italic = true
+    vim.cmd.colorscheme("everforest")
   end,
 }

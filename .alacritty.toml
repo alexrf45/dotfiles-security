@@ -1,5 +1,5 @@
 import = [
-    "~/.config/alacritty/onedark.toml"
+    "~/.config/alacritty/everforest_dark.toml"
 ]
 
 [shell]
@@ -26,7 +26,7 @@ history = 20000
 [font]
 
 #normal = { family="Hack" , style = "Bold"}
-normal = { family="JetBrains Mono NL" , style = "Bold"}
+normal = { family="JetBrains Mono" , style = "Bold"}
 #normal = { family="Iosevka Nerd Font Propo" , style = "Heavy"}
 
 size = 13

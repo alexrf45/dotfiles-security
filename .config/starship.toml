@@ -2,9 +2,8 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 
 format = """
-$directory $git_branch $git_commit $git_status 
-$aws $azure $gcloud $terraform $kubernetes $python 
-$character
+$localip $directory $git_branch $git_commit $git_status $python $azure $gcloud
+$aws $terraform $kubernetes $line_break $character
 """
 
 
@@ -15,7 +14,7 @@ read_only = " "
 home_symbol = "~"
 truncation_length = 3
 truncate_to_repo = true # truncates directory to root folder if in github repo
-style = " bold blue"
+style = " bold white"
 
 
 [character]
@@ -33,6 +32,10 @@ add_newline = true
 [line_break]
 disabled = false
 
+[localip]
+ssh_only = false
+format = '[$localipv4](bold red) '
+disabled = false
 
 [custom.tztime]
 command = 'date +"%a %b %d %Y %T"'
@@ -45,6 +48,7 @@ disabled= true
 symbol = "🐍 "
 version_format = "v${raw}"
 pyenv_version_name = true
+style = "bold italic yellow"
 
 [aws]
 format = '[ ($profile )(\($region\) )]($style)'
@@ -59,12 +63,11 @@ account-admin = 'acct-adm'
 disabled = false
 format = ' IAM: [$symbol$account(@$domain)(\($project\))]($style) '
 style = "#FEFB61"
-symbol = ""
 
 [git_branch]
 format = " [$symbol $branch]($style) "
 symbol = "🪵 "
-style = "bold yellow"
+style = "bold green"
 
 [git_status]
 conflicted = "⚔️ "
@@ -85,9 +88,9 @@ commit_hash_length = 5
 style = "bold yellow"
 
 [pulumi]
-symbol = "⚙️ "
+symbol = "🎁"
 format = " [$symbol $stack]($style)"
-style = "bright-purple"
+style = "bright purple"
 disabled = false
 
 [terraform]
@@ -101,4 +104,4 @@ disabled = false
 disabled = false
 format = "on [$symbol($subscription)]($style) "
 symbol = "ﴃ "
-style = "blue bold"
+style = "bold blue"

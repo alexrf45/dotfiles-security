@@ -14,7 +14,7 @@ alias weather='curl https://wttr.in'
 alias :q='exit'
 alias pdf='zathura'
 alias ua-drop-caches='sudo paccache -rk3; yay -Sc --aur --noconfirm'
-
+alias t-conf='vim $HOME/.tmux.conf'
 # temp notes
 alias notes='docker run -d --name memos -p 5230:5230 -v ~/.memos/:/var/opt/memos neosmemo/memos:stable'
 
