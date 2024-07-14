@@ -50,14 +50,27 @@
 --   end,
 -- }
 
+-- return {
+--   "RRethy/base16-nvim",
+--   lazy = false,
+--   priority = 1000,
+--   config = function()
+--     -- Optionally configure and load the colorscheme
+--     -- directly inside the plugin declaration.
+--     vim.g.edge_enable_italic = true
+--     vim.cmd.colorscheme("base16-eighties")
+--   end,
+-- }
+
 return {
-  "RRethy/base16-nvim",
-  lazy = false,
-  priority = 1000,
-  config = function()
-    -- Optionally configure and load the colorscheme
-    -- directly inside the plugin declaration.
-    vim.g.edge_enable_italic = true
-    vim.cmd.colorscheme("base16-eighties")
-  end,
+  -- add dracula
+  { "Mofiqul/dracula.nvim" },
+
+  -- Configure LazyVim to load dracula
+  {
+    "LazyVim/LazyVim",
+    opts = {
+      colorscheme = "dracula",
+    },
+  },
 }
