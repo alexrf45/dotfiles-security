@@ -1,5 +1,5 @@
 import = [
-    "~/.config/alacritty/melange.toml"
+    "~/.config/alacritty/irblack.toml"
 ]
 
 [shell]
