@@ -21,14 +21,31 @@
 --   end,
 -- }
 --
+-- return {
+--   {
+--     "HoNamDuong/hybrid.nvim",
+--     lazy = false,
+--     priority = 1000,
+--     config = function()
+--       vim.cmd("colorscheme hybrid")
+--     end,
+--   },
+-- }
+
+-- return {
+--   "Yazeed1s/minimal.nvim",
+--   lazy = false,
+--   priority = 1000,
+--   config = function()
+--     vim.cmd.colorscheme("minimal")
+--   end,
+-- }
+
 return {
-  "sainnhe/everforest",
+  "kdheepak/monochrome.nvim",
   lazy = false,
   priority = 1000,
   config = function()
-    -- Optionally configure and load the colorscheme
-    -- directly inside the plugin declaration.
-    vim.g.everforest_enable_italic = true
-    vim.cmd.colorscheme("everforest")
+    vim.cmd.colorscheme("monochrome")
   end,
 }

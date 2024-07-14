@@ -8,3 +8,7 @@ windows:
     layout: tiled
     panes:
       - vim $HOME/notes/
+
+  - window_name: k9s
+    panes:
+      - k9s
