@@ -181,7 +181,7 @@ exec_always --no-startup-id pulseaudio --start --daemonize --high-priority=true
 
 exec_always --no-startup-id vmware-user
 
-exec_always --no-startup-id feh --no-fehbg --bg-fill $HOME/.config/pictures/outside.png
+exec_always --no-startup-id feh --no-fehbg --bg-fill $HOME/.config/pictures/skull.jpg
 
 exec_always --no-startup-id xrandr -s 1920x1080
 
