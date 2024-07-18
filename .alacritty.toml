@@ -1,5 +1,5 @@
 import = [
-    "~/.config/alacritty/dracula.toml"
+    "~/.config/alacritty/irblack.toml"
 ]
 
 [shell]
@@ -26,10 +26,11 @@ history = 20000
 [font]
 
 #normal = { family="Hack" , style = "Bold"}
-normal = { family="JetBrains Mono" , style = "Bold"}
+#normal = { family="JetBrains Mono" , style = "Bold"}
 #normal = { family="Iosevka Nerd Font Propo" , style = "Heavy"}
-
-size = 14
+#normal = { family="Agave Nerd Font" }
+normal = { family="MesloLGL Nerd Font" , style="Bold" }
+size = 13
 
 [selection]
 save_to_clipboard = true
