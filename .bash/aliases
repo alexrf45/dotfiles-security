@@ -2,7 +2,6 @@
 alias :r='. ~/.bashrc'
 alias update='sudo pacman -Syyu'
 alias i='sudo pacman -S'
-alias ls='eza'
 alias home='cd ~'
 alias tree-overview='tree -CDL 2'
 alias tree-1='tree -CL 2'
