@@ -7,7 +7,7 @@ windows:
   - window_name: notes
     layout: tiled
     panes:
-      - vim $HOME/home-notes/
+      - vim $HOME/notes/
 
   - window_name: home-lab
     panes:
