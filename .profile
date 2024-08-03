@@ -58,18 +58,18 @@ _fzf_comprun() {
   esac
 }
 
-SSHEXEC=$(which ssh)
-ssh() {
-  if [ -n "$TMUX" ]; then
-    title="Remote Host: $*"
-    if [ "$1" = -t ]; then
-      title="$2"
-      shift 2
-    fi
-    tmux new-window -n "$title" "$SSHEXEC $@"
-  else
-    $SSHEXEC $@
-  fi
-}
+# SSHEXEC=$(which ssh)
+# ssh() {
+#   if [ -n "$TMUX" ]; then
+#     title="Remote Host: $*"
+#     if [ "$1" = -t ]; then
+#       title="$2"
+#       shift 2
+#     fi
+#     tmux new-window -n "$title" "$SSHEXEC $@"
+#   else
+#     $SSHEXEC $@
+#   fi
+# }
 
 . "$HOME/.cargo/env"

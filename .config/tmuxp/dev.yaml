@@ -3,12 +3,15 @@ windows:
   - window_name: local
     layout: tiled
     panes:
-      - yazi
+      - 
   - window_name: notes
     layout: tiled
     panes:
       - vim $HOME/notes/
 
-  - window_name: home-lab
+  - window_name: files
     panes:
-      - 
+      - yazi
+  - window_name: spotify
+    panes:
+      - ncspot
