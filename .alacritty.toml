@@ -1,5 +1,5 @@
 import = [
-    "~/.config/alacritty/bmetal.toml"
+    "~/.config/alacritty/gruv-2.toml"
 ]
 
 [shell]
