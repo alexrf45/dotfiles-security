@@ -17,7 +17,6 @@ return {
         "vim",
         "yaml",
         "go",
-        "bicep",
         "terraform",
       },
       -- Disable terraform treesitter on fixture files
