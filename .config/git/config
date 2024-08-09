@@ -6,39 +6,6 @@
 	defaultBranch = main
 [commit]
 	gpgsign = true
-[alias]
-  co = checkout
-  cob = checkout -b
-  coo = !git fetch && git checkout
-  cl = clone
-  ci = commit
-	br = branch
-	brd = branch -d
-	brD = branch -D
-  merged = branch --merged
-  sl = stash list
-  sa = stash apply
-  ss = stash save
-	st = status
-	aa = add -A .
-	cm = commit -m
-	aacm = !git add -A . && git commit
-	aacm = !git add -A . && git commit -m
-  logs = log --show-signature
-  fl = log -u
-  gl = config --global -l
-  poft= push --follow-tags
-  pod = push origin dev
-	pos = push origin staging
-  pom = push origin main
-  plod = pull origin dev
-	plos = pull origin staging
-  plom = pull origin main
-  unstage = reset --soft HEAD^
-  clean = !git reset --hard && git clean -dfxx
-  ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate
-  ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat
-  lasttag = describe --tags --abbrev=0
 [core]
 	editor = nvim
 [gpg]
