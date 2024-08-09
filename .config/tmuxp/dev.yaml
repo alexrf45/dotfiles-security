@@ -1,13 +1,13 @@
 session_name: dev
 windows:
-  - window_name: local
+  - window_name: haxor-news
     layout: tiled
     panes:
-      - 
+      - hn best 
   - window_name: notes
     layout: tiled
     panes:
-      - vim $HOME/notes/
+      - v $HOME/notes/
 
   - window_name: files
     panes:

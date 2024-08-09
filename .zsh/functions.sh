@@ -22,6 +22,13 @@ extract() {
     *.tgz) tar xzf $1 ;;
     *.zip) unzip $1 ;;
     *.Z) uncompress $1 ;;
+    *.7z) uncompress $1 ;;
+    *.apk) uncompress $1 ;;
+    *.bz2) uncompress $1 ;;
+    *.tar.gz) uncompress $1 ;;
+    *.tar.lz) uncompress $1 ;;
+    *.war) uncompress $1 ;;
+    *.xz) uncompress $1 ;;
     *) echo "'$1' cannot be extracted via extract()" ;;
     esac
   else

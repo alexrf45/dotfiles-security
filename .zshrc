@@ -1,3 +1,5 @@
+
+#zmodload zsh/zprof
 #setopt autocd extendedglob
 setopt extended_glob null_glob
 
@@ -64,4 +66,4 @@ complete -C '/usr/local/bin/aws_completer' aws
 eval "$(fzf --zsh)"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-
+#zprof
