@@ -1,6 +1,5 @@
 export PATH="$PATH:$HOME/.local/bin:$HOME/.pulumi/bin:$HOME/.cargo/bin/:$HOME/.npm-global/bin"
 
-export MINIPLUG_HOME="$HOME/.zsh/plugins"
 
 export RUSTUP_HOME="$HOME/.rustup"                                                                                                                         22:39:59 [50/59]
 export CARGO_HOME="$HOME/.cargo"

@@ -1,4 +1,5 @@
-setopt autocd extendedglob
+#setopt autocd extendedglob
+setopt extended_glob null_glob
 
 #history config
 HISTFILE=~/.zsh_history
@@ -39,7 +40,9 @@ ssh-add ~/.ssh/fr3d >/dev/null 2>&1
 ssh-add ~/.ssh/vps >/dev/null 2>&1
 
 #miniplug zsh
-source "$HOME/.zsh/plugins/miniplug.zsh"
+source "$HOME/.miniplug/plugins/miniplug.zsh"
+
+export MINIPLUG_HOME="$HOME/.miniplug/plugins"
 
 # Define a plugin
 miniplug plugin 'zsh-users/zsh-syntax-highlighting'
