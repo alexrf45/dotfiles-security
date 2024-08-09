@@ -1,7 +1,6 @@
 export PATH="$PATH:$HOME/.local/bin:$HOME/.pulumi/bin:$HOME/.cargo/bin/:$HOME/.npm-global/bin"
 
-
-export RUSTUP_HOME="$HOME/.rustup"                                                                                                                         22:39:59 [50/59]
+export RUSTUP_HOME="$HOME/.rustup"
 export CARGO_HOME="$HOME/.cargo"
 
 #aws-cli ENV
@@ -13,8 +12,9 @@ export GPG_TTY=$(tty)
 
 export DRACULA_DISPLAY_CONTEXT=1
 export DRACULA_ARROW_ICON="$ "
-export DRACULA_CUSTOM_VARIABLE=AWS_VAULT
-export DACULA_DISPLAY_NEW_LINE=1
+export DRACULA_CUSTOM_VARIABLE=$AWS_VAULT
+export DRACULA_DISPLAY_NEW_LINE=1
+
 ## FZF
 export FZF_DEFAULT_OPTS=$FZF_DEFAULT_OPTS'
   --color=fg:-1,fg+:#d0d0d0,bg:-1,bg+:#262626

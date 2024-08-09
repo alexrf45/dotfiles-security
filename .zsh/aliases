@@ -1,4 +1,4 @@
-alias :r='. ~/.bashrc'
+alias :r='. ~/.zshrc'
 alias update='sudo pacman -Syyu'
 alias i='sudo pacman -S'
 alias home='cd ~'
