@@ -131,7 +131,7 @@ alias dimls='docker image ls'
 alias dim='docker image'
 alias dc='docker container'
 alias dnt='docker network'
-alias dnuke="docker stop \$(docker ps -a -q); docker rm -f \$(docker ps -a -q); docker rmi -f \$(docker images -a -q); docker volume rm -f \$(docker volume ls -q)"
+alias dnuke="docker stop $(docker ps -a -q); docker rm -f $(docker ps -a -q); docker rmi -f $(docker images -a -q); docker volume rm -f $(docker volume ls -q)"
 
 alias portainer='docker run --name portainer -p 9000:9000 -d -v "/var/run/docker.sock:/var/run/docker.sock" portainer/portainer-ce:latest'
 alias portainerstop='docker stop portainer'
