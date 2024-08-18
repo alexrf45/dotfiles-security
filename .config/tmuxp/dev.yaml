@@ -17,4 +17,4 @@ windows:
       - ncspot
   - window_name: local 
     panes:
-      - 
+      - k9s

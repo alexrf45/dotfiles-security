@@ -104,3 +104,11 @@ dockershellhere() {
   dirname=${PWD##*/}
   docker run --rm -it --net=host --entrypoint=/bin/bash -v $(pwd):/${dirname} -w /${dirname} debian:latest
 }
+
+age-key() {
+   age-keygen -o ~/.local/$1.txt
+}
+
+encrypt-file () {
+	cat ./$1 | age -R ~/.local/$2.txt -o ./$1.enc
+}
