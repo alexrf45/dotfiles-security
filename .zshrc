@@ -1,6 +1,5 @@
 
 #zmodload zsh/zprof
-#setopt autocd extendedglob
 setopt extended_glob null_glob
 
 #history config
