@@ -15,6 +15,6 @@ windows:
   - window_name: spotify
     panes:
       - ncspot
-  - window_name: local 
+  - window_name: k9s
     panes:
       - k9s

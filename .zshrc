@@ -47,7 +47,7 @@ export MINIPLUG_HOME="$HOME/.miniplug/plugins"
 
 # Define a plugin
 miniplug plugin 'zsh-users/zsh-syntax-highlighting'
-miniplug plugin 'zsh-users/zsh-autosuggestions'
+#miniplug plugin 'zsh-users/zsh-autosuggestions'
 miniplug plugin 'zsh-users/zsh-completions'
 miniplug theme 'dracula/zsh'
 

@@ -18,6 +18,9 @@ alias taildown='docker stop tailscaled'
 alias taillogin='docker exec tailscaled tailscale --socket /tmp/tailscaled.sock status'
 
 
+#buku for bookmarks
+alias links='brave $(buku -p -f 40 | fzf | cut -f1)'
+
 #note backup
 alias brain-backup='aws s3 sync --delete ~/notes/. s3://notes-backup-primary'
 
