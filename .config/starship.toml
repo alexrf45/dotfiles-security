@@ -1,11 +1,11 @@
 # Get editor completions based on the config schema
 "$schema" = 'https://starship.rs/config-schema.json'
 
-format = """
-$localip $directory $git_branch $git_commit $git_status $python $azure $gcloud
-$aws $terraform $kubernetes $line_break $character
-"""
-
+# format = """
+# $localip $directory $git_branch $git_commit $git_status $python $azure $gcloud
+# $aws $terraform $kubernetes $line_break $character
+# """
+#
 
 # Wait 10 milliseconds for starship to check files under the current directory.
 scan_timeout = 5
@@ -23,7 +23,7 @@ style = " bold white"
 
 
 [character]
-success_symbol = " [→](bold white)"
+success_symbol = " [>](bold white)"
 error_symbol = " [×](bold red)"
 
 
@@ -34,7 +34,7 @@ disabled = false
 [localip]
 ssh_only = false
 format = '[$localipv4](bold red) '
-disabled = false
+disabled = true
 
 [custom.tztime]
 command = 'date +"%a %b %d %Y %T"'
@@ -97,7 +97,7 @@ format = " [🛠️ $version]($style) "
 
 [kubernetes]
 format = 'on [⛵ ($user on )($cluster in )$context \($namespace\)](dimmed blue) '
-disabled = false
+disabled = true
 
 [azure]
 disabled = false
