@@ -4,11 +4,6 @@ windows:
     layout: tiled
     panes:
       - hn best 
-  - window_name: notes
-    layout: tiled
-    panes:
-      - vim $HOME/notes/
-
   - window_name: files
     panes:
       - yazi

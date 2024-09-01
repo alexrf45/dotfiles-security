@@ -3,6 +3,7 @@ alias update='sudo pacman -Syyu'
 alias i='sudo pacman -S'
 alias home='cd ~'
 alias vim='nvim'
+alias edit='helix'
 alias c="clear"
 alias la='ls -lathr'
 alias t='tmux'
