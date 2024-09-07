@@ -19,7 +19,7 @@ set $right semicolon
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec /home/fr3d/.cargo/bin/alacritty
+bindsym $mod+Return exec alacritty
 
 # kill focused window
 bindsym $mod+q kill

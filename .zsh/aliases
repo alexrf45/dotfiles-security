@@ -1,10 +1,11 @@
 alias :r='. ~/.zshrc'
-alias update='sudo apt update && sudo apt upgrade -y'
-alias i='sudo apt install'
+alias update='sudo pacman -Syyu '
+alias i='sudo pacman -S'
 alias home='cd ~'
 alias c="clear"
 alias la='ls -lathr'
 alias t='tmux'
+alias vim='nvim'
 alias py='python3'
 alias weather='curl https://wttr.in'
 alias public='curl wtfismyip.com/text'

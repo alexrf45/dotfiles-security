@@ -13,9 +13,9 @@ setopt HIST_IGNORE_DUPS   # Don't save duplicate lines
 setopt SHARE_HISTORY      # Share history between sessions
 
 export SHELL=/usr/bin/zsh
-export EDITOR=vim
+export EDITOR=nvim
 export TERM='xterm-256color'
-export VISUAL=vim
+export VISUAL=nvim
 export TMUX_SCRIPT="$HOME/.config/tmux"
 
 #turn off beep
