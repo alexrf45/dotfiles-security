@@ -19,7 +19,7 @@ alias taillogin='docker exec tailscaled tailscale --socket /tmp/tailscaled.sock 
 
 
 #note backup
-alias brain-backup='aws s3 sync --delete ~/notes/. s3://notes-backup-primary'
+alias brain-backup='aws s3 sync --delete ~/sean/. s3://notes-backup-primary'
 
 # git
 
