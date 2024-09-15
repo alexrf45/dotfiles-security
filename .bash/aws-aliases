@@ -13,6 +13,7 @@ alias s3-list="aws s3api list-buckets | jq -r '.Buckets[].Name'"
 alias vpc-check='aws ec2 --output text --query "Vpcs[*].{VpcId:VpcId,Name:Tags[?Key=='Environment'].Value|[0],CidrBlock:CidrBlock}" describe-vpcs'
 alias s3-delete='aws s3api delete-bucket --bucket ${BUCKET}'
 alias iam-access-id-admin='aws iam get-user --user-name administrator | jq -r ".User | .UserId"'
+alias s3-file-size='aws s3 ls --summarize --human-readable --recursive $1 | tail -2 '
 #cloud-nuke aws
 alias aws-nuke='cloud-nuke aws --exclude-resource-type s3 --exclude-resource-type iam --exclude-resource-type secretsmanager --exclude-resource-type dynamodb'
 alias aws-nuke-view-us-east-1='cloud-nuke inspect-aws --region us-east-1'

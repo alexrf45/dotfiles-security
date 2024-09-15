@@ -1,15 +1,22 @@
 session_name: dev
 windows:
+  - window_name: local
+    layout: tiled
+    panes:
+      -
   - window_name: haxor-news
     layout: tiled
     panes:
-      - hn best 
+      - hn best
   - window_name: files
     panes:
       - yazi
-  - window_name: spotify
-    panes:
-      - ncspot
   - window_name: k9s
     panes:
       - k9s
+  - window_name: prod
+    panes:
+      - v ~/projects/prod-argo/
+  - window_name: dev
+    panes:
+      - v ~/projects/dev-argo/

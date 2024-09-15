@@ -57,6 +57,12 @@ aws_cli() {
     cgr.dev/chainguard/aws-cli:latest $*
 }
 
+s3-file-size() {
+  aws s3 ls --summarize \
+    --human-readable \
+    --recursive $1 | tail -2
+}
+
 arch-mirror() {
   export TMPFILE="$(mktemp)"
   sudo true
@@ -106,9 +112,9 @@ dockershellhere() {
 }
 
 age-key() {
-   age-keygen -o ~/.local/$1.txt
+  age-keygen -o ~/.local/$1.txt
 }
 
-encrypt-file () {
-	cat ./$1 | age -R ~/.local/$2.txt -o ./$1.enc
+encrypt-file() {
+  cat ./$1 | age -R ~/.local/$2.txt -o ./$1.enc
 }
