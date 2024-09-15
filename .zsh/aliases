@@ -24,6 +24,12 @@ alias links='brave $(buku -p -f 40 | fzf | cut -f1)'
 #note backup
 alias brain-backup='aws s3 sync --delete ~/notes/. s3://notes-backup-primary'
 
+#argo repos
+alias prod='cd ~/projects/prod-argo/'
+alias dev='cd ~/projects/dev-argo/'
+alias homelab='cd ~/home-lab/'
+
+
 # git
 
 
