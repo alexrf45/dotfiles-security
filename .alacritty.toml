@@ -26,10 +26,10 @@ history = 20000
 [font]
 
 #normal = { family="UbuntuMono Nerd Font Mono" , style = "Bold"}
-#normal = { family="JetBrains Mono" , style = "Bold"}
+normal = { family="JetBrains Mono" , style = "Bold"}
 #normal = { family="Agave Nerd Font" }
-normal = { family="Anonymous Pro Minus", style = "Bold" }
-size = 15
+#normal = { family="Anonymous Pro Minus", style = "Bold" }
+size = 13
 
 [selection]
 save_to_clipboard = true

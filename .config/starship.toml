@@ -39,9 +39,9 @@ disabled = true
 [custom.tztime]
 command = 'date +"%a %b %d %Y %T"'
 when = "true"
-format = ' [\[🕙 $symbol($output)\]]($style)'
-style= "italic white"
-disabled= true
+format = ' [\[🕙 $symbol($output)\]]($style) '
+style= "bold white"
+disabled= false
 
 [python]
 symbol = "🐍 "
