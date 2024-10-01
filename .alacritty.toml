@@ -1,5 +1,5 @@
 import = [
-    "~/.config/alacritty/kanagawa-dragon.toml"
+    "~/.config/alacritty/nord.toml"
 ]
 
 [shell]

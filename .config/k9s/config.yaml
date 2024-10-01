@@ -11,7 +11,7 @@ k9s:
     logoless: true
     crumbsless: false
     reactive: false
-    skin: kanagawa
+    skin: nord
     noIcons: false
   skipLatestRevCheck: false
   disablePodCounting: false
