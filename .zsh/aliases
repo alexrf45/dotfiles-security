@@ -11,7 +11,7 @@ alias weather='curl https://wttr.in'
 alias public='curl wtfismyip.com/text'
 alias q='exit'
 alias pdf='zathura'
-
+alias download='aria2c'
 alias tailscale='docker run -d --name=tailscaled -v /var/lib:/var/lib -v /dev/net/tun:/dev/net/tun --network=host --cap-add=NET_ADMIN --cap-add=NET_RAW tailscale/tailscale'
 alias tailup='docker start tailscaled'
 alias taildown='docker stop tailscaled'
@@ -167,3 +167,5 @@ alias ap='ansible-playbook'
 
 #gcp
 alias gcloud='docker run --rm --volumes-from gcloud-config gcr.io/google.com/cloudsdktool/google-cloud-cli gcloud'
+alias htb='sudo openvpn ~/.config/openvpn/lab_fr3dzz.ovpn'
+alias echo-ctf='sudo openvpn ~/.config/openvpn/echoCTF.ovpn'
