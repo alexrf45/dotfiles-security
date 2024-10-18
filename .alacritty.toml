@@ -1,5 +1,5 @@
 import = [
-    "~/.config/alacritty/tender.toml"
+    "~/.config/alacritty/htb.toml"
 ]
 
 [shell]
@@ -27,8 +27,8 @@ history = 20000
 
 #normal = { family="UbuntuMono Nerd Font Mono" , style = "Bold"}
 #normal = { family="JetBrains Mono" , style = "Bold"}
-#normal = { family="Agave Nerd Font" }
-normal = { family="Anonymous Pro Minus", style = "Bold" }
+normal = { family="Iosevka Nerd Font Mono" }
+#normal = { family="Anonymous Pro Minus", style = "Bold" }
 size = 15
 
 [selection]
