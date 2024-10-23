@@ -1,0 +1,39 @@
+# Matrix Inspired Theme for Alacritty
+# Save this as ~/.config/alacritty/theme.toml or merge with your existing theme.toml
+
+[colors]
+# Primary colors
+[colors.primary]
+background = "0x000000"   # Black background
+foreground = "0x00FF00"   # Bright green text
+
+# Normal colors
+[colors.normal]
+black = "0x000000"        # Black
+red = "0xFF0000"          # Red (optional for warnings/errors)
+green = "0x00FF00"        # Bright green
+yellow = "0xB3FF00"       # Yellow-green for directories or emphasized text
+blue = "0x00CC00"         # Dark green-blue for softer tones
+magenta = "0x009900"      # Dark green-magenta for highlights
+cyan = "0x00FF66"         # Cyan-green
+white = "0x66FF66"        # Pale green for secondary text
+
+# Bright colors
+[colors.bright]
+black = "0x003300"        # Darker green for contrast
+red = "0xFF3333"          # Bright red (warnings)
+green = "0x33FF33"        # Slightly brighter green for bold text
+yellow = "0xCCFF33"       # Brighter yellow-green
+blue = "0x00FF33"         # Brighter green-blue
+magenta = "0x00FF99"      # Brighter magenta-green for selected text
+cyan = "0x00FFCC"         # Bright cyan-green
+white = "0x99FF99"        # Bright pale green for light text
+
+[colors.cursor]
+text = "0x000000"         # Black text inside the cursor
+cursor = "0x00FF00"       # Bright green cursor
+
+[colors.selection]
+text = "0x000000"         # Selected text in black
+background = "0x00FF66"   # Selection background in bright cyan-green
+

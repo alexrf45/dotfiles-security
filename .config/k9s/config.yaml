@@ -1,6 +1,7 @@
+#  $XDG_CONFIG_HOME/k9s/config.yaml
 k9s:
-  liveViewAutoRefresh: false
-  screenDumpDir: /home/fr3d/.local/state/k9s/screen-dumps
+  liveViewAutoRefresh: true
+  screenDumpDir: /tmp/dumps
   refreshRate: 1
   maxConnRetry: 5
   readOnly: false
@@ -10,13 +11,16 @@ k9s:
     headless: false
     logoless: true
     crumbsless: false
-    reactive: false
-    skin: nord
     noIcons: false
+    # Toggles reactive UI. This option provide for watching on disk artifacts changes and update the UI live  Defaults to false.
+    reactive: true
+    # By default all contexts wil use the dracula skin unless explicitly overridden in the context config file.
+    skin: matrix # => assumes the file skins/dracula.yaml is present in the  $XDG_DATA_HOME/k9s/skins directory
+    defaultsToFullScreen: false
   skipLatestRevCheck: false
   disablePodCounting: false
   shellPod:
-    image: busybox:1.35.0
+    image: busybox
     namespace: default
     limits:
       cpu: 100m
@@ -30,9 +34,8 @@ k9s:
     tail: 100
     buffer: 5000
     sinceSeconds: -1
-    fullScreen: false
-    textWrap: false
-    showTime: true
+    textWrap: true
+    showTime: false
   thresholds:
     cpu:
       critical: 90

@@ -16,9 +16,18 @@
 --   end,
 -- }
 
+-- return {
+--   "audibleblink/hackthebox.vim",
+--   config = function()
+--     vim.cmd([[colorscheme hackthebox]])
+--   end,
+-- }
+--
+
 return {
-  "audibleblink/hackthebox.vim",
+  "iruzo/matrix-nvim",
   config = function()
-    vim.cmd([[colorscheme hackthebox]])
+    vim.cmd([[colorscheme matrix]])
+    vim.g.matrix_disable_background = true
   end,
 }

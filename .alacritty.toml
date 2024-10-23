@@ -1,5 +1,5 @@
 import = [
-    "~/.config/alacritty/htb.toml"
+    "~/.config/alacritty/matrix.toml"
 ]
 
 [shell]
