@@ -1,9 +1,9 @@
--- return {
---   "rebelot/kanagawa.nvim",
---   config = function()
---     vim.cmd([[colorscheme kanagawa-dragon]])
---   end,
--- }
+return {
+  "rebelot/kanagawa.nvim",
+  config = function()
+    vim.cmd([[colorscheme kanagawa-dragon]])
+  end,
+}
 -- return {
 --   "RRethy/base16-nvim",
 --   lazy = false,
@@ -24,10 +24,10 @@
 -- }
 --
 
-return {
-  "iruzo/matrix-nvim",
-  config = function()
-    vim.cmd([[colorscheme matrix]])
-    vim.g.matrix_disable_background = true
-  end,
-}
+-- return {
+--   "iruzo/matrix-nvim",
+--   config = function()
+--     vim.cmd([[colorscheme matrix]])
+--     vim.g.matrix_disable_background = true
+--   end,
+-- }

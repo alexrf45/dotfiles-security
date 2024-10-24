@@ -65,6 +65,6 @@ complete -C '/usr/local/bin/aws_completer' aws
 eval "$(fzf --zsh)"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-eval "$(starship init zsh)"
+#eval "$(starship init zsh)"
 
 #zprof

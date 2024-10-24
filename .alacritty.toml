@@ -1,8 +1,5 @@
-import = [
-    "~/.config/alacritty/matrix.toml"
-]
 
-[shell]
+[terminal.shell]
 program = "/bin/zsh"
 
 [env]
@@ -121,6 +118,13 @@ action = "ScrollToBottom"
 key = "End"
 mode = "~Alt"
 mods = "Shift"
+
+[general]
+import = [
+    "~/.config/alacritty/kanagawa-dragon.toml"
+]
+
+[terminal]
 
 
 
