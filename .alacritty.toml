@@ -23,10 +23,10 @@ history = 20000
 [font]
 
 #normal = { family="UbuntuMono Nerd Font Mono" , style = "Bold"}
-#normal = { family="JetBrains Mono" , style = "Bold"}
+normal = { family="JetBrains Mono" , style = "Bold"}
 #normal = { family="Iosevka Nerd Font Mono" }
-normal = { family="Anonymous Pro Minus", style = "Bold" }
-size = 15
+#normal = { family="Anonymous Pro Minus", style = "Bold" }
+size = 13
 
 [selection]
 save_to_clipboard = true
@@ -121,7 +121,7 @@ mods = "Shift"
 
 [general]
 import = [
-    "~/.config/alacritty/kanagawa-dragon.toml"
+    "~/.config/alacritty/gruv.toml"
 ]
 
 [terminal]
