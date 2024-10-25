@@ -1,20 +1,20 @@
 # -----------------------------------------------------------------------------
-# Nord skin
+# gruv material dark hard  skin
 # -----------------------------------------------------------------------------
 
 # Styles...
-foreground: &foreground "#00FF00"
-background: &background "#000000"
-current_line: &current_line "#00OO00"
-selection: &selection "#000000"
-comment: &comment "#00OO00"
-cyan: &cyan "#00FF00"
-green: &green "#00FF00"
-orange: &orange "#00FF00"
-blue: &blue "#00FF00"
-magenta: &magenta "#00FF00"
-red: &red "#00FF00"
-yellow: &yellow "#00FF00"
+foreground: &foreground "#d4be98"
+background: &background "#1d2021"
+current_line: &current_line "#d4be98"
+selection: &selection "#8ec07c"
+comment: &comment "#79740e"
+cyan: &cyan "#458588"
+green: &green "#98971a"
+orange: &orange "#fe8019"
+blue: &blue "#83a598"
+magenta: &magenta "#d3869b"
+red: &red "#fb4934"
+yellow: &yellow "#d79921"
 
 # Skin...
 k9s:
@@ -30,7 +30,7 @@ k9s:
     suggestColor: *orange
   # ClusterInfoView styles.
   info:
-    fgColor: *blue
+    fgColor: *green
     sectionColor: *foreground
   # Dialog styles.
   dialog:
@@ -49,17 +49,17 @@ k9s:
       focusColor: *current_line
     menu:
       fgColor: *foreground
-      keyColor: *blue
+      keyColor: *green
       # Used for favorite namespaces
-      numKeyColor: *blue
+      numKeyColor: *magenta
     # CrumbView attributes for history navigation.
     crumbs:
       fgColor: *foreground
-      bgColor: *current_line
-      activeColor: *current_line
+      bgColor: default
+      activeColor: *blue
     # Resource status and update styles
     status:
-      newColor: *cyan
+      newColor: *foreground
       modifyColor: *magenta
       addColor: *green
       errorColor: *red
@@ -69,10 +69,10 @@ k9s:
     # Border title styles.
     title:
       fgColor: *foreground
-      bgColor: *current_line
-      highlightColor: *orange
-      counterColor: *magenta
-      filterColor: *blue
+      bgColor: default
+      highlightColor: *blue
+      counterColor: *green
+      filterColor: *yellow
   views:
     # Charts skins...
     charts:
@@ -110,9 +110,9 @@ k9s:
       bgColor: default
       indicator:
         fgColor: *foreground
-        bgColor: *magenta
+        bgColor: *blue
         toggleOnColor: *magenta
-        toggleOffColor: *blue
+        toggleOffColor: *red
     help:
       fgColor: *foreground
       bgColor: *background
