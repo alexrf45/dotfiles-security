@@ -118,3 +118,16 @@ age-key() {
 encrypt-file() {
   cat ./$1 | age -R ~/.local/$2.txt -o ./$1.enc
 }
+
+encrypt_age() {
+  age \
+    --passphrase \
+    --output $1.enc \
+    $2
+
+}
+
+decrypt_age() {
+  age -d \
+    $1 >$2
+}
