@@ -18,6 +18,10 @@ export DRACULA_DISPLAY_TIME=0
 #export DRACULA_TIME_FORMAT="%-H:%M"
 export DRACULA_TIME_FORMAT="%a %b %d %Y %T"
 
+#kubeconfig
+export KUBECONFIG="$HOME/.kube/devconfig"
+
+
 ## FZF
 export FZF_DEFAULT_OPTS=$FZF_DEFAULT_OPTS'
   --color=fg:-1,fg+:#d0d0d0,bg:-1,bg+:#262626

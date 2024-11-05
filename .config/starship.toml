@@ -1,11 +1,13 @@
 # Get editor completions based on the config schema
 "$schema" = 'https://starship.rs/config-schema.json'
 
-# format = """
-# $localip $directory $git_branch $git_commit $git_status $python $azure $gcloud
-# $aws $terraform $kubernetes $line_break $character
-# """
-#
+format = """
+$custom $line_break
+ $directory $git_branch $python 
+$aws $azure $gcloud $terraform $kubernetes
+$line_break $character
+"""
+
 
 # Wait 10 milliseconds for starship to check files under the current directory.
 scan_timeout = 5
@@ -15,7 +17,7 @@ add_newline = true
 
 
 [directory]
-read_only = " "
+read_only = " 🔒"
 home_symbol = "~"
 truncation_length = 3
 truncate_to_repo = true # truncates directory to root folder if in github repo
@@ -25,7 +27,6 @@ style = " bold white"
 [character]
 success_symbol = " [>](bold white)"
 error_symbol = " [×](bold red)"
-
 
 
 [line_break]
@@ -39,7 +40,7 @@ disabled = true
 [custom.tztime]
 command = 'date +"%a %b %d %Y %T"'
 when = "true"
-format = ' [\[🕙 $symbol($output)\]]($style) '
+format = ' [\[ ⏰ $symbol($output)\] ]($style) '
 style= "bold green"
 disabled= false
 
@@ -50,7 +51,7 @@ pyenv_version_name = true
 style = "bold italic yellow"
 
 [aws]
-format = '[ ($profile )(\($region\) )]($style)'
+format = '[ aws: ($profile )(\($region\) )]($style)'
 style = "#bf5700"
 [aws.region_aliases]
 us-east-1 = "ue-1"
@@ -93,11 +94,11 @@ style = "bright purple"
 disabled = false
 
 [terraform]
-format = " [🛠️ $version]($style) "
+format = " [tf: $version]($style) "
 
 [kubernetes]
-format = 'on [⛵ ($user on )($cluster in )$context \($namespace\)](dimmed blue) '
-disabled = true
+format = 'context [🌌 ($cluster in )$context \($namespace\)](bold blue) '
+disabled = false
 
 [azure]
 disabled = false
