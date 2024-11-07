@@ -19,7 +19,7 @@ export DRACULA_DISPLAY_TIME=0
 export DRACULA_TIME_FORMAT="%a %b %d %Y %T"
 
 #kubeconfig
-export KUBECONFIG="$HOME/.kube/devconfig"
+export KUBECONFIG="$HOME/.kube/config"
 
 
 ## FZF
