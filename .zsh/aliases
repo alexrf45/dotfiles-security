@@ -33,7 +33,6 @@ alias prod='cd ~/projects/prod-argo/'
 alias dev='cd ~/projects/dev-argo/'
 alias homelab='cd ~/home-lab/'
 
-
 # git
 
 
@@ -81,10 +80,6 @@ alias kl='kubectl logs'
 alias kgp='kubectl get pods'
 alias kcctx='k config get-contexts -o name'
 alias ksercrets='kubectl describe secrets'
-
-#argocli
-
-alias argo='docker run -it --rm --name argo-cd -v $HOME/.kube:/.kube -v $HOME/.argocd/config:/.argocd/config bitnami/argo-cd:latest'
 
 #dot files
 alias dot='/usr/bin/git --git-dir=/home/$USER/.cfg/ --work-tree=/home/$USER'
@@ -141,6 +136,7 @@ alias lzd='docker run --rm -it -v /var/run/docker.sock:/var/run/docker.sock -v /
 
 #docker
 alias d='docker'
+alias dpwd='docker run --rm -v "$(pwd):$(pwd)" -w "$(pwd)" -u "$(id -u):$(id -g)" -it'
 alias dimls='docker image ls'
 alias dim='docker image'
 alias dc='docker container'

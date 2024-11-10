@@ -9,3 +9,6 @@ setopt SHARE_HISTORY      # Share history between sessions
 #turn off beep
 unsetopt beep
 
+autoload bashcompinit && bashcompinit
+autoload -Uz compinit && compinit
+
