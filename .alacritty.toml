@@ -121,7 +121,7 @@ mods = "Shift"
 
 [general]
 import = [
-    "~/.config/alacritty/matrix.toml"
+    "~/.config/alacritty/nord.toml"
 ]
 
 [terminal]
