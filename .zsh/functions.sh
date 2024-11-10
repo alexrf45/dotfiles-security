@@ -111,14 +111,6 @@ dockershellhere() {
   docker run --rm -it --net=host --entrypoint=/bin/bash -v $(pwd):/${dirname} -w /${dirname} debian:latest
 }
 
-age-key() {
-  age-keygen -o ~/.local/$1.txt
-}
-
-encrypt-file() {
-  cat ./$1 | age -R ~/.local/$2.txt -o ./$1.enc
-}
-
 encrypt_age() {
   age \
     --passphrase \
@@ -130,4 +122,14 @@ encrypt_age() {
 decrypt_age() {
   age -d \
     $1 >$2
+}
+
+mkcd() {
+  if [ ! -n "$1" ]; then
+    echo "Enter a directory name"
+  elif [ -d $1 ]; then
+    echo "\`$1' already exists"
+  else
+    mkdir $1 && cd $1
+  fi
 }
