@@ -121,7 +121,7 @@ mods = "Shift"
 
 [general]
 import = [
-    "~/.config/alacritty/kanagawa-dragon.toml"
+    "~/.config/alacritty/matrix.toml"
 ]
 
 [terminal]

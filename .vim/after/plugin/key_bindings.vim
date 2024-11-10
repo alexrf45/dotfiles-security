@@ -1,6 +1,8 @@
 let mapleader = ' '
 nnoremap <leader>h :helpgrep<space>
 
+inoremap <leader>e <esc>
+
 "ctrl-s to save
 nnoremap <C-s> :w<CR>
 
