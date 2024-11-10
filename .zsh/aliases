@@ -5,6 +5,7 @@ alias h='cd ~'
 alias v='nvim'
 alias c="clear"
 alias la='ls -lathr'
+alias get="curl -O -L"
 alias dir='exa'
 alias cat='bat'
 alias t='tmux'

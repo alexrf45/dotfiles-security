@@ -10,13 +10,11 @@ export AWS_PAGER=
 export AWS_CLI_AUTO_PROMPT=on-partial
 export GPG_TTY=$(tty)
 
-export DRACULA_DISPLAY_CONTEXT=0
-export DRACULA_ARROW_ICON="$ "
-export DRACULA_CUSTOM_VARIABLE=$AWS_VAULT
-export DRACULA_DISPLAY_NEW_LINE=1
-export DRACULA_DISPLAY_TIME=0
-#export DRACULA_TIME_FORMAT="%-H:%M"
-export DRACULA_TIME_FORMAT="%a %b %d %Y %T"
+
+export SHELL=/usr/bin/zsh
+export EDITOR=vim
+export TERM='xterm-256color'
+export VISUAL=vim
 
 #kubeconfig
 export KUBECONFIG="$HOME/.kube/config"
@@ -27,9 +25,9 @@ export FZF_DEFAULT_OPTS=$FZF_DEFAULT_OPTS'
   --color=fg:-1,fg+:#d0d0d0,bg:-1,bg+:#262626
   --color=hl:#5fb079,hl+:#43fb00,info:#afaf87,marker:#87ff00
   --color=prompt:#06fd34,spinner:#f2ff5e,pointer:#fbfbfb,header:#87afaf
-  --color=border:#28fe03,preview-fg:#f1f8f2,label:#aeaeae,query:#e97b7b
+  --color=border:#2B3328,preview-fg:#f1f8f2,label:#aeaeae,query:#e97b7b
   --border="rounded" --border-label="" --preview-window="border-rounded" --prompt="> "
-  --marker=">" --pointer="◆" --separator="─" --scrollbar="│"'
+  --marker=">" --pointer="" --separator="─" --scrollbar="│"'
 
 # Use ~~ as the trigger sequence instead of the default **
 export FZF_COMPLETION_TRIGGER='..'

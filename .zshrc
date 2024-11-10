@@ -1,26 +1,12 @@
 
 #zmodload zsh/zprof
-setopt extended_glob null_glob
-#enable prompt output
-setopt PROMPT_SUBST
+
 #history config
 HISTFILE=~/.zsh_history
 HISTSIZE=100000
 SAVEHIST=100000
 HIST_STAMPS="mm/dd/yyyy"
 
-setopt HIST_IGNORE_SPACE  # Don't save when prefixed with space
-setopt HIST_IGNORE_DUPS   # Don't save duplicate lines
-setopt SHARE_HISTORY      # Share history between sessions
-
-export SHELL=/usr/bin/zsh
-export EDITOR=vim
-export TERM='xterm-256color'
-export VISUAL=vim
-
-
-#turn off beep
-unsetopt beep
 
 #source aliases and env
 source "$HOME/.zprofile"
