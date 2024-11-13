@@ -22,10 +22,8 @@ history = 20000
 
 [font]
 
-#normal = { family="Nimbus Mono PS" , style = "Bold"}
-normal = { family="JetBrains Mono" , style = "Bold"}
-#normal = { family="Iosevka Nerd Font Mono", style = "Bold" }
-#normal = { family="Anonymous Pro Minus", style = "Bold" }
+#normal = { family="JetBrains Mono" , style = "Bold"}
+normal = { family="Iosevka Nerd Font Mono", style = "Bold" }
 size = 13
 
 [selection]
@@ -121,7 +119,7 @@ mods = "Shift"
 
 [general]
 import = [
-    "~/.config/alacritty/nord.toml"
+    "~/.config/alacritty/catppuccin-mocha.toml"
 ]
 
 [terminal]

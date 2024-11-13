@@ -18,3 +18,5 @@ nnoremap <leader>fek :cd ~/.vim<CR>:e ~/.vim/after/plugin/key_bindings.vim<CR>
 " SPC-f-e-o to edit your options file
 nnoremap <leader>feo :cd ~/.vim<CR>:e ~/.vim/after/plugin/options.vim<CR>
 nnoremap <leader>n :NERDTreeToggle<CR>
+nnoremap <leader>s :split<CR>
+nnoremap <leader>v :vsplit<CR>
