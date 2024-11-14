@@ -65,6 +65,8 @@ alias glog='git log --date-order --pretty="format:%C(yellow)%h%Cblue%d%Creset %s
 alias gl='glog --graph'
 alias gla='gl --all'
 
+alias yeskube="sed -i '/^\[kubernetes\]$/,/^\[/{s/^disabled = true/disabled = false/;}' ~/.config/starship.toml"
+alias nokube="sed -i '/^\[kubernetes\]$/,/^\[/{s/^disabled = false/disabled = true/;}' ~/.config/starship.toml"
 alias context='kubectx'
 alias kn='kubens'
 alias k='kubectl'

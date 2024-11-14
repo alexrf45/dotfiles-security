@@ -2,12 +2,10 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 
 format = """
-$custom $line_break
- $directory $git_branch $python 
-$aws $azure $gcloud $terraform $kubernetes
-$line_break $character
+  $directory$git_branch$git_status$git_commit$terraform$python
+ $azure$gcloud$aws$kubernetes
+ $character
 """
-
 
 # Wait 10 milliseconds for starship to check files under the current directory.
 scan_timeout = 5
@@ -15,13 +13,12 @@ scan_timeout = 5
 # Disable the blank line at the start of the prompt
 add_newline = true
 
-
 [directory]
 read_only = " 🔒"
 home_symbol = "~"
 truncation_length = 3
 truncate_to_repo = true # truncates directory to root folder if in github repo
-style = " bold white"
+style = " green"
 
 
 [character]
@@ -32,55 +29,38 @@ error_symbol = " [×](bold red)"
 [line_break]
 disabled = false
 
-[localip]
-ssh_only = false
-format = '[$localipv4](bold red) '
-disabled = true
-
-[custom.tztime]
-command = 'date +"%a %b %d %Y %T"'
-when = "true"
-format = ' [\[ ⏰ $symbol($output)\] ]($style) '
-style= "bold green"
-disabled= false
-
 [python]
-symbol = "🐍 "
+symbol = "py "
 version_format = "v${raw}"
 pyenv_version_name = true
 style = "bold italic yellow"
 
 [aws]
-format = '[ aws: ($profile )(\($region\) )]($style)'
-style = "#bf5700"
+format = '[ aws: $profile/$region ]($style)'
+style = " italic #bf5700"
 [aws.region_aliases]
-us-east-1 = "ue-1"
+us-east-1 = "us-east-1"
 [aws.profile_aliases]
 Admin = 'Administrator'
 account-admin = 'acct-adm'
 
 [gcloud]
 disabled = false
-format = ' IAM: [$symbol$account(@$domain)(\($project\))]($style) '
+format = ' gcloud: [$symbol$account(@$domain)(\($project\))]($style) '
 style = "#FEFB61"
 
 [git_branch]
-format = " [$symbol $branch]($style) "
-symbol = "🪵 "
-style = "bold green"
+format = " [ on $symbol $branch]($style) "
+style = "bold purple"
 
 [git_status]
 conflicted = "⚔️ "
-ahead = "🏎️ 💨 ×${count}"
-behind = "🐢 ×${count}"
-diverged = "🔱 🏎️ 💨 ×${ahead_count} 🐢 ×${behind_count}"
-untracked = "🛤️  ×${count}"
-stashed = "📦 "
-modified = "📜 ×${count} "
-staged = "🗃️  ×${count} "
-renamed = "📛 ×${count}"
-deleted = "🗑️  ×${count}"
-style = "bright-white"
+ahead = ">"
+behind = "<"
+diverged = "<>"
+renamed = "r"
+deleted = "x"
+style = "bright purple"
 format = "$all_status$ahead_behind"
 
 [git_commit]
@@ -90,18 +70,17 @@ style = "bold yellow"
 [pulumi]
 symbol = "🎁"
 format = " [$symbol $stack]($style)"
-style = "bright purple"
 disabled = false
 
 [terraform]
-format = " [tf: $version]($style) "
+format = " [🔧 $version]($style) "
 
 [kubernetes]
-format = 'context [🌌 ($cluster in )$context \($namespace\)](bold blue) '
-disabled = false
+format = '[k3s: ($cluster in )$context \($namespace\)](bold italic blue) '
+disabled = true
 
 [azure]
 disabled = false
 format = "on [$symbol($subscription)]($style) "
-symbol = "ﴃ "
+symbol = "azure: "
 style = "bold blue"
