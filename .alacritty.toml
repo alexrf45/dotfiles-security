@@ -119,7 +119,7 @@ mods = "Shift"
 
 [general]
 import = [
-    "~/.config/alacritty/monokai-pro.toml"
+    "~/.config/alacritty/monokai-pro-spectrum.toml"
 ]
 
 [terminal]
