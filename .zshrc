@@ -1,5 +1,10 @@
-
-#zmodload zsh/zprof
+#oh-my-zsh
+#export ZSH="$HOME/.oh-my-zsh"
+#ZSH_THEME="robbyrussell"
+#zstyle ':omz:update' mode auto      # update automatically without asking
+#zstyle ':omz:update' frequency 13
+#ENABLE_CORRECTION="true"
+#DISABLE_UNTRACKED_FILES_DIRTY="true"
 
 #history config
 HISTFILE=~/.zsh_history
@@ -14,7 +19,21 @@ for file in $HOME/.zsh/*; do
     source "$file"
 done
 
+#plugins
+# plugins=(
+#   colorize
+#   python
+#   ssh
+#   themes
+#   tmux
+# )
+
+#source $ZSH/oh-my-zsh.sh
+
+#old config 
+#
 fpath=(/tmp/zsh-completions/src $fpath)
+
 
 #persistant ssh agent
 eval $(ssh-agent) &> /dev/null
