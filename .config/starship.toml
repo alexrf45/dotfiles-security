@@ -1,10 +1,16 @@
 # Get editor completions based on the config schema
 "$schema" = 'https://starship.rs/config-schema.json'
 
+# format = """
+#   $directory$git_branch$git_status$git_commit$terraform$python
+#  $azure$gcloud$aws$kubernetes
+#  $character
+# """
 format = """
-  $directory$git_branch$git_status$git_commit$terraform$python
- $azure$gcloud$aws$kubernetes
- $character
+[╭─k8s──────❯](bold white) $kubernetes
+[┣─cloud────❯](bold white) $aws $gcloud $azure
+[┣─project──❯](bold white) $directory$git_branch $git_status $git_commit $golang$terraform$docker_context$python$docker_context$nodejs
+[╰](bold white)$character 
 """
 
 # Wait 10 milliseconds for starship to check files under the current directory.
@@ -18,7 +24,7 @@ read_only = " 🔒"
 home_symbol = "~"
 truncation_length = 3
 truncate_to_repo = true # truncates directory to root folder if in github repo
-style = " green"
+style = " cyan"
 
 
 [character]
@@ -51,16 +57,20 @@ style = "#FEFB61"
 
 [git_branch]
 format = " [ on $symbol $branch]($style) "
-style = "bold purple"
+style = "bold green"
 
 [git_status]
 conflicted = "⚔️ "
-ahead = ">"
-behind = "<"
-diverged = "<>"
-renamed = "r"
-deleted = "x"
-style = "bright purple"
+ahead = "🏎️ 💨 ×${count} "
+behind = "🐢 ×${count} "
+diverged = "🔱 🏎️ 💨 ×${ahead_count} 🐢 ×${behind_count} "
+untracked = "🛤️  ×${count} "
+stashed = "📦 "
+modified = "📝 ×${count} "
+staged = "🗃️  ×${count} "
+renamed = "📛 ×${count} "
+deleted = "🗑️  ×${count} "
+style = "bright-white"
 format = "$all_status$ahead_behind"
 
 [git_commit]
@@ -76,7 +86,7 @@ disabled = false
 format = " [🔧 $version]($style) "
 
 [kubernetes]
-format = '[k3s: ($cluster in )$context \($namespace\)](bold italic blue) '
+format = '[k3s: ($cluster in )$context \($namespace\)](bold yellow) '
 disabled = true
 
 [azure]
