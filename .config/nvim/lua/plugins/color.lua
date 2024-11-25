@@ -1,49 +1,29 @@
--- return {
---   "catppuccin/nvim",
---   lazy = false,
---   priority = 1000,
---   config = function()
---     vim.cmd.colorscheme("catppuccin")
---     require("catppuccin").setup({
---       flavour = "auto", -- latte, frappe, macchiato, mocha
---       background = { -- :h background
---         light = "latte",
---         dark = "mocha",
---       },
---       transparent_background = false, -- disables setting the background color.
---       show_end_of_buffer = false, -- shows the '~' characters after the end of buffers
---       term_colors = false, -- sets terminal colors (e.g. `g:terminal_color_0`)
---       dim_inactive = {
---         enabled = true, -- dims the background color of inactive window
---         shade = "dark",
---         percentage = 0.15, -- percentage of the shade to apply to the inactive window
---       },
---       no_italic = false, -- Force no italic
---       no_bold = false, -- Force no bold
---       no_underline = false, -- Force no underline
---       styles = { -- Handles the styles of general hi groups (see `:h highlight-args`):
---         comments = { "italic" }, -- Change the style of comments
---         conditionals = { "italic" },
---       },
---       default_integrations = true,
---       integrations = {
---         cmp = true,
---         gitsigns = true,
---         nvimtree = true,
---         treesitter = true,
---         notify = false,
---         mini = {
---           enabled = true,
---           indentscope_color = "",
---         },
---         -- For more plugins integrations please scroll down (https://github.com/catppuccin/nvim#integrations)
---       },
---     })
---   end,
--- }
 return {
-  "loctvl842/monokai-pro.nvim",
+  "RRethy/base16-nvim",
+  lazy = false,
+  priority = 1000,
   config = function()
-    vim.cmd([[colorscheme monokai-pro-spectrum]])
+    vim.cmd.colorscheme("base16-classic-dark")
+    vim.g.edge_enable_italic = true
+    require("base16-colorscheme").setup({
+      base00 = "#292418", -- Background
+      base01 = "#292418", -- Lighter Background
+      base02 = "#665c54", -- Selection Background
+      base03 = "#504945", -- Comments, Invisible
+      base04 = "#665c54", -- Dark Foreground
+      base05 = "#bdae93", -- Default Foreground
+      base06 = "#d5c4a1", -- Light Foreground
+      base07 = "#fbf1c7", -- Lightest Foreground
+      base08 = "#fb4934", -- Red
+      base09 = "#fe8019", -- Orange
+      base0A = "#fabd2f", -- Yellow
+      base0B = "#b8bb26", -- Green
+      base0C = "#8ec07c", -- Aqua/Cyan
+      base0D = "#83a598", -- Blue
+      base0E = "#d3869b", -- Purple
+      base0F = "#d65d0e", -- Brown
+    })
+    -- Optionally configure and load the colorscheme
+    -- directly inside the plugin declaration.
   end,
 }
