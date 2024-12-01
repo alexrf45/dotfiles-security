@@ -1,18 +1,9 @@
 session_name: fr3d
 windows:
-  - window_name: local
+  - window_name: kali
     layout: tiled
     panes:
       -
-  - window_name: k9s
+  - window_name: vpn
     panes:
-      - k9s
-  - window_name: prod
-    panes:
-      - v ~/projects/prod-argo/
-  - window_name: dev
-    panes:
-      - v ~/projects/dev-argo/
-  - window_name: cluster
-    panes:
-      - v ~/memphis-k3s/
+      - htb
