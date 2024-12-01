@@ -1,0 +1,14 @@
+session_name: aegis-dev
+start_directory: ~/projects/aegis/
+windows:
+  - window_name: python-wrapper
+    layout: tiled
+    panes:
+      - v .
+      - py-virt
+  - window_name: dev shell
+    panes:
+      - aegis start
+  - window_name: amun
+    panes:
+      - ssh amun
