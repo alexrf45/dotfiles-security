@@ -12,7 +12,7 @@ red = "#5e4a3d"
 
 [colors.primary]
 foreground = "#c6a78d"
-background = "#2a211c"
+background = "#000000"
 
 [colors.selection]
 background = "#5e4a3d"

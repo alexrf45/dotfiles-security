@@ -22,6 +22,7 @@ alias taildown='docker stop tailscaled'
 alias taillogin='docker exec tailscaled tailscale --socket /tmp/tailscaled.sock status'
 
 alias blog='scp ~/pico/blog/* prose.sh:/'
+alias aegis-dev='tmuxp load ~/.config/tmuxp/aegis.yaml'
 
 #buku for bookmarks
 alias links='brave $(buku -p -f 40 | fzf | cut -f1)'
